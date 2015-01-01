@@ -1,0 +1,22 @@
+{
+  "name": "papier",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "myth src/index.css dist/papier.css",
+    "watch": "myth --watch ./src/index.css ./dist/papier.css",
+    "serve": "st --no-cache",
+    "dev": "npm run serve & npm run watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "myth": "^1.2.1",
+    "st": "^0.5.2"
+  },
+  "dependencies": {
+    "normalize.css": "^3.0.2"
+  }
+}
