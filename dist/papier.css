@@ -445,13 +445,9 @@ th {
   padding: 0;
 }
 
-/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
-
-/* apply a natural box layout model to all elements, but allowing components to change */
-
 html {
   box-sizing: border-box;
-  font: 400 16px/1.5 'Source Sans Pro', 'Helvetica Neue', Helvetica, arial, sans-serif;
+  font: 400 10.666666666666666px 'Source Sans Pro', 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
 
 *,
@@ -460,22 +456,13 @@ html {
   box-sizing: inherit;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /*margin: 0;*/
-}
-
-.card {
+.papier-card {
   padding: 0.5em;
   margin: 0.5em;
   background: #fff;
 }
 
-.row:after {
+.papier-row:after {
   content: '';
   display: table;
   clear: both;
@@ -486,436 +473,433 @@ h6 {
   width: 100%;
 }
 
-.col-0 {
+.papier-col-0 {
   width: 0%;
 }
 
-.col-1 {
-  width: 8.333333333333332%;
+.papier-col-1 {
+  width: 8.3333333333333%;
 }
 
-.col-2 {
-  width: 16.666666666666664%;
+.papier-col-2 {
+  width: 16.6666666666667%;
 }
 
-.col-3 {
+.papier-col-3 {
   width: 25%;
 }
 
-.col-4 {
-  width: 33.33333333333333%;
+.papier-col-4 {
+  width: 33.3333333333333%;
 }
 
-.col-5 {
-  width: 41.66666666666667%;
+.papier-col-5 {
+  width: 41.6666666666667%;
 }
 
-.col-6 {
+.papier-col-6 {
   width: 50%;
 }
 
-.col-7 {
-  width: 58.333333333333336%;
+.papier-col-7 {
+  width: 58.3333333333333%;
 }
 
-.col-8 {
-  width: 66.66666666666666%;
+.papier-col-8 {
+  width: 66.6666666666667%;
 }
 
-.col-9 {
+.papier-col-9 {
   width: 75%;
 }
 
-.col-10 {
-  width: 83.33333333333334%;
+.papier-col-10 {
+  width: 83.3333333333333%;
 }
 
-.col-11 {
-  width: 91.66666666666666%;
+.papier-col-11 {
+  width: 91.6666666666667%;
 }
 
-.col-12 {
+.papier-col-12 {
   width: 100%;
 }
 
 @media screen and (min-width: 568px) {
-  .col-sm-0 {
+  .papier-col-sm-0 {
     width: 0%;
   }
 
-  .col-sm-1 {
-    width: 8.333333333333332%;
+  .papier-col-sm-1 {
+    width: 8.3333333333333%;
   }
 
-  .col-sm-2 {
-    width: 16.666666666666664%;
+  .papier-col-sm-2 {
+    width: 16.6666666666667%;
   }
 
-  .col-sm-3 {
+  .papier-col-sm-3 {
     width: 25%;
   }
 
-  .col-sm-4 {
-    width: 33.33333333333333%;
+  .papier-col-sm-4 {
+    width: 33.3333333333333%;
   }
 
-  .col-sm-5 {
-    width: 41.66666666666667%;
+  .papier-col-sm-5 {
+    width: 41.6666666666667%;
   }
 
-  .col-sm-6 {
+  .papier-col-sm-6 {
     width: 50%;
   }
 
-  .col-sm-7 {
-    width: 58.333333333333336%;
+  .papier-col-sm-7 {
+    width: 58.3333333333333%;
   }
 
-  .col-sm-8 {
-    width: 66.66666666666666%;
+  .papier-col-sm-8 {
+    width: 66.6666666666667%;
   }
 
-  .col-sm-9 {
+  .papier-col-sm-9 {
     width: 75%;
   }
 
-  .col-sm-10 {
-    width: 83.33333333333334%;
+  .papier-col-sm-10 {
+    width: 83.3333333333333%;
   }
 
-  .col-sm-11 {
-    width: 91.66666666666666%;
+  .papier-col-sm-11 {
+    width: 91.6666666666667%;
   }
 
-  .col-sm-12 {
+  .papier-col-sm-12 {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .col-md-0 {
+  .papier-col-md-0 {
     width: 0%;
   }
 
-  .col-md-1 {
-    width: 8.333333333333332%;
+  .papier-col-md-1 {
+    width: 8.3333333333333%;
   }
 
-  .col-md-2 {
-    width: 16.666666666666664%;
+  .papier-col-md-2 {
+    width: 16.6666666666667%;
   }
 
-  .col-md-3 {
+  .papier-col-md-3 {
     width: 25%;
   }
 
-  .col-md-4 {
-    width: 33.33333333333333%;
+  .papier-col-md-4 {
+    width: 33.3333333333333%;
   }
 
-  .col-md-5 {
-    width: 41.66666666666667%;
+  .papier-col-md-5 {
+    width: 41.6666666666667%;
   }
 
-  .col-md-6 {
+  .papier-col-md-6 {
     width: 50%;
   }
 
-  .col-md-7 {
-    width: 58.333333333333336%;
+  .papier-col-md-7 {
+    width: 58.3333333333333%;
   }
 
-  .col-md-8 {
-    width: 66.66666666666666%;
+  .papier-col-md-8 {
+    width: 66.6666666666667%;
   }
 
-  .col-md-9 {
+  .papier-col-md-9 {
     width: 75%;
   }
 
-  .col-md-10 {
-    width: 83.33333333333334%;
+  .papier-col-md-10 {
+    width: 83.3333333333333%;
   }
 
-  .col-md-11 {
-    width: 91.66666666666666%;
+  .papier-col-md-11 {
+    width: 91.6666666666667%;
   }
 
-  .col-md-12 {
+  .papier-col-md-12 {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .col-lg-0 {
+  .papier-col-lg-0 {
     width: 0%;
   }
 
-  .col-lg-1 {
-    width: 8.333333333333332%;
+  .papier-col-lg-1 {
+    width: 8.3333333333333%;
   }
 
-  .col-lg-2 {
-    width: 16.666666666666664%;
+  .papier-col-lg-2 {
+    width: 16.6666666666667%;
   }
 
-  .col-lg-3 {
+  .papier-col-lg-3 {
     width: 25%;
   }
 
-  .col-lg-4 {
-    width: 33.33333333333333%;
+  .papier-col-lg-4 {
+    width: 33.3333333333333%;
   }
 
-  .col-lg-5 {
-    width: 41.66666666666667%;
+  .papier-col-lg-5 {
+    width: 41.6666666666667%;
   }
 
-  .col-lg-6 {
+  .papier-col-lg-6 {
     width: 50%;
   }
 
-  .col-lg-7 {
-    width: 58.333333333333336%;
+  .papier-col-lg-7 {
+    width: 58.3333333333333%;
   }
 
-  .col-lg-8 {
-    width: 66.66666666666666%;
+  .papier-col-lg-8 {
+    width: 66.6666666666667%;
   }
 
-  .col-lg-9 {
+  .papier-col-lg-9 {
     width: 75%;
   }
 
-  .col-lg-10 {
-    width: 83.33333333333334%;
+  .papier-col-lg-10 {
+    width: 83.3333333333333%;
   }
 
-  .col-lg-11 {
-    width: 91.66666666666666%;
+  .papier-col-lg-11 {
+    width: 91.6666666666667%;
   }
 
-  .col-lg-12 {
+  .papier-col-lg-12 {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .col-xl-0 {
+  .papier-col-xl-0 {
     width: 0%;
   }
 
-  .col-xl-1 {
-    width: 8.333333333333332%;
+  .papier-col-xl-1 {
+    width: 8.3333333333333%;
   }
 
-  .col-xl-2 {
-    width: 16.666666666666664%;
+  .papier-col-xl-2 {
+    width: 16.6666666666667%;
   }
 
-  .col-xl-3 {
+  .papier-col-xl-3 {
     width: 25%;
   }
 
-  .col-xl-4 {
-    width: 33.33333333333333%;
+  .papier-col-xl-4 {
+    width: 33.3333333333333%;
   }
 
-  .col-xl-5 {
-    width: 41.66666666666667%;
+  .papier-col-xl-5 {
+    width: 41.6666666666667%;
   }
 
-  .col-xl-6 {
+  .papier-col-xl-6 {
     width: 50%;
   }
 
-  .col-xl-7 {
-    width: 58.333333333333336%;
+  .papier-col-xl-7 {
+    width: 58.3333333333333%;
   }
 
-  .col-xl-8 {
-    width: 66.66666666666666%;
+  .papier-col-xl-8 {
+    width: 66.6666666666667%;
   }
 
-  .col-xl-9 {
+  .papier-col-xl-9 {
     width: 75%;
   }
 
-  .col-xl-10 {
-    width: 83.33333333333334%;
+  .papier-col-xl-10 {
+    width: 83.3333333333333%;
   }
 
-  .col-xl-11 {
-    width: 91.66666666666666%;
+  .papier-col-xl-11 {
+    width: 91.6666666666667%;
   }
 
-  .col-xl-12 {
+  .papier-col-xl-12 {
     width: 100%;
   }
 }
 
-.round-1 {
+.papier-round-1 {
   border-radius: 1px;
 }
 
-.round-2 {
+.papier-round-2 {
   border-radius: 2px;
 }
 
-.round-3 {
+.papier-round-3 {
   border-radius: 3px;
 }
 
-.round-4 {
+.papier-round-4 {
   border-radius: 4px;
 }
 
-.round-5 {
+.papier-round-5 {
   border-radius: 5px;
 }
 
-.round-10 {
+.papier-round-10 {
   border-radius: 10px;
 }
 
-/* https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d */
-
-.depth-0 {
+.papier-depth-0 {
   box-shadow: none;
 }
 
-.depth-1 {
+.papier-depth-1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.depth-2 {
+.papier-depth-2 {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.depth-3 {
+.papier-depth-3 {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.depth-4 {
+.papier-depth-4 {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.depth-5 {
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+.papier-depth-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-.subtle {
+.papier-subtle {
   opacity: 0.5;
 }
 
-.inner-seamless {
+.papier-inner-seamless {
   padding: 0;
 }
 
-.outer-seamless {
+.papier-outer-seamless {
   margin: 0;
 }
 
-.subtle-bg {
-  background: rgba(0, 0, 0, 0.05);
+.papier-subtle-bg {
+  background: rgba(0,0,0,0.05);
 }
 
-.no-bg {
+.papier-no-bg {
   background: none;
 }
 
-.white-bg {
+.papier-white-bg {
   background: #fff;
 }
 
-.red-bg {
+.papier-red-bg {
   background: #f44336;
 }
 
-.pink-bg {
+.papier-pink-bg {
   background: #e91e63;
 }
 
-.purple-bg {
+.papier-purple-bg {
   background: #9c27b0;
 }
 
-.deep-purple-bg {
+.papier-deep-purple-bg {
   background: #673ab7;
 }
 
-.indigo-bg {
+.papier-indigo-bg {
   background: #3f51b5;
 }
 
-.blue-bg {
+.papier-blue-bg {
   background: #2196f3;
 }
 
-.light-blue-bg {
+.papier-light-blue-bg {
   background: #03a9f4;
 }
 
-.cyan-bg {
+.papier-cyan-bg {
   background: #00bcd4;
 }
 
-.teal-bg {
+.papier-teal-bg {
   background: #009688;
 }
 
-.green-bg {
+.papier-green-bg {
   background: #4caf50;
 }
 
-.light-green-bg {
+.papier-light-green-bg {
   background: #8bc34a;
 }
 
-.lime-bg {
+.papier-lime-bg {
   background: #cddc39;
 }
 
-.yellow-bg {
+.papier-yellow-bg {
   background: #ffeb3b;
 }
 
-.amber-bg {
+.papier-amber-bg {
   background: #ffc107;
 }
 
-.orange-bg {
+.papier-orange-bg {
   background: #ff9800;
 }
 
-.deep-orange-bg {
+.papier-deep-orange-bg {
   background: #ff5722;
 }
 
-.brown-bg {
+.papier-brown-bg {
   background: #795548;
 }
 
-.grey-bg {
+.papier-grey-bg {
   background: #9e9e9e;
 }
 
-.blue-grey-bg {
+.papier-blue-grey-bg {
   background: #607d8b;
 }
 
-.full-width {
+.papier-full-width {
   width: 100%;
 }
 
-hr {
+.papier-break {
   border: 0;
   border-bottom: 1px solid #eee;
   margin: 2em 0;
 }
 
-button,
-input[type=submit] {
+.papier-button {
   border: 0;
   border-radius: 3px;
   background: none;
@@ -926,107 +910,107 @@ input[type=submit] {
   margin: 0.25em;
 }
 
-button.white {
+.papier-button-white {
   color: #000;
-  background: rgb(255, 255, 255);
+  background: #fff;
 }
 
-button.red {
+.papier-button-red {
   color: #fff;
-  background: rgb(244, 67, 54);
+  background: #f44336;
 }
 
-button.pink {
+.papier-button-pink {
   color: #fff;
-  background: rgb(233, 30, 99);
+  background: #e91e63;
 }
 
-button.purple {
+.papier-button-purple {
   color: #fff;
-  background: rgb(156, 39, 176);
+  background: #9c27b0;
 }
 
-button.deep-purple {
+.papier-button-deep-purple {
   color: #fff;
-  background: rgb(103, 58, 183);
+  background: #673ab7;
 }
 
-button.indigo {
+.papier-button-indigo {
   color: #fff;
-  background: rgb(63, 81, 181);
+  background: #3f51b5;
 }
 
-button.blue {
+.papier-button-blue {
   color: #fff;
-  background: rgb(33, 150, 243);
+  background: #2196f3;
 }
 
-button.light-blue {
+.papier-button-light-blue {
   color: #fff;
-  background: rgb(3, 169, 244);
+  background: #03a9f4;
 }
 
-button.cyan {
+.papier-button-cyan {
   color: #fff;
-  background: rgb(0, 188, 212);
+  background: #00bcd4;
 }
 
-button.teal {
+.papier-button-teal {
   color: #fff;
-  background: rgb(0, 150, 136);
+  background: #009688;
 }
 
-button.green {
+.papier-button-green {
   color: #fff;
-  background: rgb(76, 175, 80);
+  background: #4caf50;
 }
 
-button.light-green {
+.papier-button-light-green {
   color: #fff;
-  background: rgb(139, 195, 74);
+  background: #8bc34a;
 }
 
-button.lime {
+.papier-button-lime {
   color: #fff;
-  background: rgb(205, 220, 57);
+  background: #cddc39;
 }
 
-button.yellow {
+.papier-button-yellow {
   color: #000;
-  background: rgb(255, 235, 59);
+  background: #ffeb3b;
 }
 
-button.amber {
+.papier-button-amber {
   color: #fff;
-  background: rgb(255, 193, 7);
+  background: #ffc107;
 }
 
-button.orange {
+.papier-button-orange {
   color: #fff;
-  background: rgb(255, 152, 0);
+  background: #ff9800;
 }
 
-button.deep-orange {
+.papier-button-deep-orange {
   color: #fff;
-  background: rgb(255, 87, 34);
+  background: #ff5722;
 }
 
-button.brown {
+.papier-button-brown {
   color: #fff;
-  background: rgb(121, 85, 72);
+  background: #795548;
 }
 
-button.grey {
+.papier-button-grey {
   color: #fff;
-  background: rgb(158, 158, 158);
+  background: #9e9e9e;
 }
 
-button.blue-grey {
+.papier-button-blue-grey {
   color: #fff;
-  background: rgb(96, 125, 139);
+  background: #607d8b;
 }
 
-input[type=text] {
+.papier-input {
   border: 0;
   margin: 0.25em;
   padding: 0.5em;

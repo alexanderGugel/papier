@@ -1,0 +1,26 @@
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+[class*='col-'] {
+  float: left;
+  width: 100%;
+}
+
+generate-column-classes(columns, prefix) {
+  for i in (0..columns) {
+    .{prefix}{i} {
+      width: ((i/columns)*100)%;
+    }
+  }
+}
+
+generate-column-classes(12, 'col-');
+
+@media screen and (min-width: 568px) { generate-column-classes(12, 'col-sm-'); }
+@media screen and (min-width: 768px) { generate-column-classes(12, 'col-md-'); }
+@media screen and (min-width: 1024px) { generate-column-classes(12, 'col-lg-'); }
+@media screen and (min-width: 1280px) { generate-column-classes(12, 'col-xl-'); }
+

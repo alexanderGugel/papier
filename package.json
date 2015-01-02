@@ -4,8 +4,7 @@
   "description": "Just another CSS framework (WIP)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "myth src/index.css dist/papier.css",
-    "watch": "myth --watch ./src/index.css ./dist/papier.css",
+    "build": "stylus src/index.styl --print --include-css --prefix papier- | myth > dist/papier.css",
     "serve": "st --no-cache",
     "dev": "npm run serve & npm run watch"
   },
@@ -13,7 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "myth": "^1.2.1",
-    "st": "^0.5.2"
+    "st": "^0.5.2",
+    "stylus": "^0.49.3"
   },
   "dependencies": {
     "normalize.css": "^3.0.2"
