@@ -4,7 +4,7 @@
   "description": "Just another CSS framework (WIP)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "stylus src/index.styl --print --include-css --prefix papier- | myth > dist/papier.css",
+    "watch": "stylus --include-css --watch src/*.styl --out dist",
     "serve": "st --no-cache",
     "dev": "npm run serve & npm run watch"
   },

@@ -4,12 +4,18 @@ html {
   box-sizing: border-box;
   font: $font;
 }
-
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0.5em 0;
   padding: 0;
 }

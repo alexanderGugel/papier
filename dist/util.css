@@ -1,0 +1,98 @@
+.subtle {
+  opacity: 0.5;
+}
+.subtle-bg {
+  background: rgba(0,0,0,0.05);
+}
+.full-width {
+  width: 100%;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.s-padding {
+  padding: 0.5em;
+}
+.m-padding {
+  padding: 1em;
+}
+.l-padding {
+  padding: 1.5em;
+}
+.s-margin {
+  margin: 0.5em;
+}
+.m-margin {
+  margin: 1em;
+}
+.l-margin {
+  margin: 1.5em;
+}
+hr {
+  border: 0;
+  border-bottom: 1px solid #eee;
+  margin: 2em 0;
+}
+.no-bg {
+  background: none;
+}
+.white-bg {
+  background: $white;
+}
+.red-bg {
+  background: $red;
+}
+.pink-bg {
+  background: $pink;
+}
+.purple-bg {
+  background: $purple;
+}
+.deep-purple-bg {
+  background: $deep-purple;
+}
+.indigo-bg {
+  background: $indigo;
+}
+.blue-bg {
+  background: $blue;
+}
+.light-blue-bg {
+  background: $light-blue;
+}
+.cyan-bg {
+  background: $cyan;
+}
+.teal-bg {
+  background: $teal;
+}
+.green-bg {
+  background: $green;
+}
+.light-green-bg {
+  background: $light-green;
+}
+.lime-bg {
+  background: $lime;
+}
+.yellow-bg {
+  background: $yellow;
+}
+.amber-bg {
+  background: $amber;
+}
+.orange-bg {
+  background: $orange;
+}
+.deep-orange-bg {
+  background: $deep-orange;
+}
+.brown-bg {
+  background: $brown;
+}
+.grey-bg {
+  background: $grey;
+}
+.blue-grey-bg {
+  background: $blue-grey;
+}

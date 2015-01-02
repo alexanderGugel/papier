@@ -7,148 +7,160 @@
     <link rel="stylesheet" href="dist/papier.css">
     <style>
       #grid-system .row {
-        papier-color: #fff;
+        color: #fff;
       }
       
-      #grid-system [class*='papier-col-'] {
+      #grid-system .demo [class*='col-'] {
         padding: 5em 0.25em 0.25em;
-        font-size: 0.75em;
+      }
+
+      .gist .gist-file {
+        margin: 0 !important;
       }
     </style>
   </head>
-  <body class="papier papier-subtle-bg">
-    <section class="papier-row">
-      <div class="papier-col-md-6">
-        <div class="papier-card papier-depth-1" id="buttons">
+  <body class="subtle-bg s-padding">
+
+    <section class="row" id="buttons">
+      <div class="col-md-6">
+        <div class="card depth-1">
           <h2>Buttons</h2>
-          <button class="papier-white-button papier-button">white</button>
-          <button class="papier-red-button papier-button">red</button>
-          <button class="papier-pink-button papier-button">pink</button>
-          <button class="papier-purple-button papier-button">purple</button>
-          <button class="papier-deep-purple-button papier-button">deep-purple</button>
-          <button class="papier-indigo-button papier-button">indigo</button>
-          <button class="papier-blue-button papier-button">blue</button>
-          <button class="papier-light-blue-button papier-button">light-blue</button>
-          <button class="papier-cyan-button papier-button">cyan</button>
-          <button class="papier-teal-button papier-button">teal</button>
-          <button class="papier-green-button papier-button">green</button>
-          <button class="papier-light-green-button papier-button">light-green</button>
-          <button class="papier-lime-button papier-button">lime</button>
-          <button class="papier-yellow-button papier-button">yellow</button>
-          <button class="papier-amber-button papier-button">amber</button>
-          <button class="papier-orange-button papier-button">orange</button>
-          <button class="papier-deep-orange-button papier-button">deep-orange</button>
-          <button class="papier-brown-button papier-button">brown</button>
-          <button class="papier-grey-button papier-button">grey</button>
-          <button class="papier-blue-grey-button papier-button">blue-grey</button>
+          <button class="white">white</button>
+          <button class="red">red</button>
+          <button class="pink">pink</button>
+          <button class="purple">purple</button>
+          <button class="deep-purple">deep-purple</button>
+          <button class="indigo">indigo</button>
+          <button class="blue">blue</button>
+          <button class="light-blue">light-blue</button>
+          <button class="cyan">cyan</button>
+          <button class="teal">teal</button>
+          <button class="green">green</button>
+          <button class="light-green">light-green</button>
+          <button class="lime">lime</button>
+          <button class="yellow">yellow</button>
+          <button class="amber">amber</button>
+          <button class="orange">orange</button>
+          <button class="deep-orange">deep-orange</button>
+          <button class="brown">brown</button>
+          <button class="grey">grey</button>
+          <button class="blue-grey">blue-grey</button>
+
+          <hr>
+
+          <h2>Button sizes</h2>
+          <button class="xs teal">xs teal</button>
+          <button class="s teal">s teal</button>
+          <button class="m teal">m teal</button>
+          <button class="l teal">l teal</button>
+          <button class="xl teal">xl teal</button>
+
+          <hr>
+
+          <h2>Utilities</h2>
+          <button class="loose red">loose red</button>
+          <button class="uppercase green">uppercase green</button>
         </div>
       </div>
-      <div class="papier-col-6" id="forms">
-        <div class="papier-card papier-depth-1">
-          <input type="text" class="papier-input" placeholder="type=text">
-          <input type="text" class="papier-full-width" placeholder="type=text full-width">
-        </div>
-      </div>
-    </section>
-<!--     <section class="row">
-      <div class="papier-col-6">
-        <h2>Typography</h2>
-      </div>
-    </section> -->
-    <section id="papier-depth">
-      <div class="papier-no-bg papier-card">
-        <h2>Material-design-like shadows</h2>
-      </div>
-      <div class="papier-row">
-        <div class="papier-col-md-2">
-          <div class="papier-card papier-depth-0">
-            papier-card papier-depth-0
-          </div>
-        </div>
-        <div class="papier-col-md-2">
-          <div class="papier-card papier-depth-1">
-            papier-card papier-depth-1
-          </div>
-        </div>
-        <div class="papier-col-md-2">
-          <div class="papier-card papier-depth-2">
-            papier-card papier-depth-2
-          </div>
-        </div>
-        <div class="papier-col-md-2">
-          <div class="papier-card papier-depth-3">
-            papier-card papier-depth-3
-          </div>
-        </div>
-        <div class="papier-col-md-2">
-          <div class="papier-card papier-depth-4">
-            papier-card papier-depth-4
-          </div>
-        </div>
-        <div class="papier-col-md-2">
-          <div class="papier-card papier-depth-5">
-            papier-card papier-depth-5
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="grid-system">
-      <div class="papier-card papier-depth-3">
-        <h2>12-papier-column grid system</h2>
-        <div class="papier-row">
-          <div class="papier-col-1 papier-red-bg">papier-col-1<br> papier-red-bg</div>
-          <div class="papier-col-1 papier-pink-bg">papier-col-1<br> papier-pink-bg</div>
-          <div class="papier-col-1 papier-purple-bg">papier-col-1<br> papier-purple-bg</div>
-          <div class="papier-col-1 papier-deep-purple-bg">papier-col-1<br> papier-deep-purple-bg</div>
-          <div class="papier-col-1 papier-indigo-bg">papier-col-1<br> papier-indigo-bg</div>
-          <div class="papier-col-1 papier-indigo-bg">papier-col-1<br> papier-indigo-bg</div>
-          <div class="papier-col-1 papier-blue-bg">papier-col-1<br> papier-blue-bg</div>
-          <div class="papier-col-1 papier-light-blue-bg">papier-col-1<br> papier-light-blue-bg</div>
-          <div class="papier-col-1 papier-cyan-bg">papier-col-1<br> papier-cyan-bg</div>
-          <div class="papier-col-1 papier-teal-bg">papier-col-1<br> papier-teal-bg</div>
-          <div class="papier-col-1 papier-green-bg">papier-col-1<br> papier-green-bg</div>
-          <div class="papier-col-1 papier-light-green-bg">papier-col-1<br> papier-light-green-bg</div>
-        </div>
-        <div class="papier-row">
-          <div class="papier-col-2 papier-lime-bg">papier-col-2<br> papier-lime-bg</div>
-          <div class="papier-col-3 papier-yellow-bg">papier-col-3<br> papier-yellow-bg</div>
-          <div class="papier-col-4 papier-amber-bg">papier-col-4<br> papier-amber-bg</div>
-          <div class="papier-col-3 papier-orange-bg">papier-col-3<br> papier-orange-bg</div>
-        </div>
-        <div class="papier-row">
-          <div class="papier-col-6 papier-deep-orange-bg">papier-col-1<br> papier-deep-orange-bg</div>
-          <div class="papier-col-3 papier-brown-bg">papier-col-3<br> papier-brown-bg</div>
-          <div class="papier-col-1 papier-grey-bg">papier-col-1<br> papier-grey-bg</div>
-          <div class="papier-col-2 papier-blue-grey-bg">papier-col-2<br> papier-blue-grey-bg</div>
-        </div>
+      <div class="col-md-6">
+        <div class="card depth-1">
 
-        <hr>
+          <script src="https://gist.github.com/alexanderGugel/a20d920f6c4e059c6cb4.js"></script>
 
-        <p>It's also pretty responsive (resize window to try it out).</p>
-
-        <div class="papier-row">
-          <div class="papier-col-sm-6 red-bg">papier-col-sm-6<br> papier-red-bg</div>
-          <div class="papier-col-sm-6 yellow-bg">papier-col-sm-6<br> papier-yellow-bg</div>
-        </div>
-        
-        <div class="papier-row">
-          <div class="papier-col-md-6 lime-bg">papier-col-md-6<br> papier-lime-bg</div>
-          <div class="papier-col-md-6 grey-bg">papier-col-md-6<br> papier-grey-bg</div>
-        </div>
-
-        <div class="papier-row">
-          <div class="papier-col-lg-6 blue-grey-bg">papier-col-lg-6<br> papier-blue-grey-bg</div>
-          <div class="papier-col-lg-6 cyan-bg">papier-col-lg-6<br> papier-cyan-bg</div>
-        </div>
-
-        <div class="papier-row">
-          <div class="papier-col-xl-6 teal-bg">papier-col-xl-6<br> papier-teal-bg</div>
-          <div class="papier-col-xl-6 purple-bg">papier-col-xl-6<br> papier-purple-bg</div>
         </div>
       </div>
     </section>
 
-    <footer class="papier-card papier-depth-4">
+    <section class="row" id="depth">
+      <div class="col-md-6">
+        <div class="card depth-1">
+          <h2>Material design like shadows</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card depth-0">card depth-0</div>
+            </div>
+            <div class="col-md-6">
+              <div class="card depth-1">card depth-1</div>
+            </div>
+            <div class="col-md-6">
+              <div class="card depth-2">card depth-2</div>
+            </div>
+            <div class="col-md-6">
+              <div class="card depth-3">card depth-3</div>
+            </div>
+            <div class="col-md-6">
+              <div class="card depth-4">card depth-4</div>
+            </div>
+            <div class="col-md-6">
+              <div class="card depth-5">card depth-5</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card depth-1">
+          <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script>
+        </div>
+      </div>
+    </section>
+
+    <section class="row" id="grid-system">
+      <div class="col-12 col-xl-6">
+        <div class="card depth-3">
+          <h2>12-column grid system</h2>
+          <div class="row demo">
+            <div class="col-1 red-bg">col-1<br> red-bg</div>
+            <div class="col-1 pink-bg">col-1<br> pink-bg</div>
+            <div class="col-1 purple-bg">col-1<br> purple-bg</div>
+            <div class="col-1 deep-purple-bg">col-1<br> deep-purple-bg</div>
+            <div class="col-1 indigo-bg">col-1<br> indigo-bg</div>
+            <div class="col-1 indigo-bg">col-1<br> indigo-bg</div>
+            <div class="col-1 blue-bg">col-1<br> blue-bg</div>
+            <div class="col-1 light-blue-bg">col-1<br> light-blue-bg</div>
+            <div class="col-1 cyan-bg">col-1<br> cyan-bg</div>
+            <div class="col-1 teal-bg">col-1<br> teal-bg</div>
+            <div class="col-1 green-bg">col-1<br> green-bg</div>
+            <div class="col-1 light-green-bg">col-1<br> light-green-bg</div>
+          </div>
+          <div class="row demo">
+            <div class="col-2 lime-bg">col-2<br> lime-bg</div>
+            <div class="col-3 yellow-bg">col-3<br> yellow-bg</div>
+            <div class="col-4 amber-bg">col-4<br> amber-bg</div>
+            <div class="col-3 orange-bg">col-3<br> orange-bg</div>
+          </div>
+          <div class="row demo">
+            <div class="col-6 deep-orange-bg">col-1<br> deep-orange-bg</div>
+            <div class="col-3 brown-bg">col-3<br> brown-bg</div>
+            <div class="col-1 grey-bg">col-1<br> grey-bg</div>
+            <div class="col-2 blue-grey-bg">col-2<br> blue-grey-bg</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-xl-6">
+        <div class="card depth-3">
+          <h2>It's also responsive!</h2>
+
+          <div class="row demo">
+            <div class="col-sm-6 red-bg">col-sm-6<br> red-bg</div>
+            <div class="col-sm-6 yellow-bg">col-sm-6<br> yellow-bg</div>
+          </div>
+          <div class="row demo">
+            <div class="col-md-6 lime-bg">col-md-6<br> lime-bg</div>
+            <div class="col-md-6 grey-bg">col-md-6<br> grey-bg</div>
+          </div>
+          <div class="row demo">
+            <div class="col-lg-6 blue-grey-bg">col-lg-6<br> blue-grey-bg</div>
+            <div class="col-lg-6 cyan-bg">col-lg-6<br> cyan-bg</div>
+          </div>
+          <div class="row demo">
+            <div class="col-xl-6 teal-bg">col-xl-6<br> teal-bg</div>
+            <div class="col-xl-6 purple-bg">col-xl-6<br> purple-bg</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="card depth-4">
       <p>Disclaimer: I'm not a designer.</p>
     </footer>
 
