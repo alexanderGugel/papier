@@ -6,6 +6,7 @@
 [class*='col-'] {
   float: left;
   width: 100%;
+  min-height: 1px;
 }
 .col-0 {
   width: 0%;

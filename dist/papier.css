@@ -431,7 +431,10 @@ th {
   padding: 0;
 }
 
-html {
+html,
+button,
+input,
+textarea {
   box-sizing: border-box;
   font: 400 16px 'Source Sans Pro', 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
@@ -468,25 +471,8 @@ p {
 .round-10 {
   border-radius: 10px;
 }
-.depth-0 {
-  box-shadow: none;
-}
-.depth-1,
-button {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-.depth-2 {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-.depth-3,
-button:hover {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-.depth-4 {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.depth-5 {
-  box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.22);
+.round {
+  border-radius: 100%;
 }
 .inner-seamless {
   padding: 0;
@@ -507,6 +493,7 @@ button:hover {
 [class*='col-'] {
   float: left;
   width: 100%;
+  min-height: 1px;
 }
 .col-0 {
   width: 0%;
@@ -711,6 +698,26 @@ button:hover {
     width: 100%;
   }
 }
+.depth-0 {
+  box-shadow: none;
+}
+.depth-1,
+button {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.depth-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.depth-3,
+button:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.depth-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.depth-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.22);
+}
 button {
   border: 0;
   border-radius: 3px;
@@ -742,8 +749,16 @@ button.l {
 button.xl {
   font-size: 1.5em;
 }
+button[disabled],
+button.disabled {
+  background: #eaeaea;
+  color: #a8a8a8;
+}
 button.loose {
   padding: 1em 2em;
+}
+button .icon {
+  margin-right: 0.5em;
 }
 button.white {
   color: #000;
@@ -867,6 +882,15 @@ hr {
   border: 0;
   border-bottom: 1px solid #eee;
   margin: 2em 0;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
 }
 .no-bg {
   background: none;

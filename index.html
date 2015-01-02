@@ -4,14 +4,25 @@
     <meta charset="utf-8">
     <title>Papier CSS library</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css">
     <link rel="stylesheet" href="dist/papier.css">
     <style>
+      header {
+      }
+
+      header .logo {
+        color: #000;
+        text-decoration: none;
+        border-bottom: 5px solid #000;
+      }
+
       #grid-system .row {
         color: #fff;
       }
       
       #grid-system .demo [class*='col-'] {
         padding: 5em 0.25em 0.25em;
+        font-size: 0.75em;
       }
 
       .gist .gist-file {
@@ -20,7 +31,10 @@
     </style>
   </head>
   <body class="subtle-bg s-padding">
-
+    <header class="l-padding">
+      <a href="#" class="logo"><h1><i class="icon ion-paper-airplane"></i> Paper</h1></a>
+      is a minimal, semantic, responsive (< 10k) CSS framework.<br>
+    </header>
     <section class="row" id="buttons">
       <div class="col-md-6">
         <div class="card depth-1">
@@ -60,6 +74,8 @@
           <h2>Utilities</h2>
           <button class="loose red">loose red</button>
           <button class="uppercase green">uppercase green</button>
+          <button disabled="disabled">[disabled]</button>
+          <button class="indigo"><i class="icon ion-ios-cart"></i> Checkout</button>
         </div>
       </div>
       <div class="col-md-6">
