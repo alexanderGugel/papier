@@ -862,12 +862,10 @@ button.loose {
 button .icon {
   margin-right: 0.5em;
 }
-button.white,
-button.yellow {
+button.white {
   color: #000;
 }
-button.white a,
-button.yellow a {
+button.white a {
   color: #000;
 }
 button.white {
@@ -981,7 +979,7 @@ input:focus {
   color: #000;
 }
 .pager li.active {
-  color: #ccc;
+  background: #f2f2f2;
 }
 .pager li:hover {
   background: #eee;

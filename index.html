@@ -30,15 +30,14 @@
   <header class="l-padding row">
     <div class="col-md-6">  
       <a href="#" class="logo"><h1><i class="icon ion-paper-airplane"></i> Papier</h1></a>
-      – a minimal, semantic, responsive (< 10k) CSS framework.<br>
+      – a minimal, pretty semantic, responsive CSS library.
     </div>
     <div class="col-md-6 right">
-      <a href="https://github.com/alexanderGugel/papier" class="download"><button class="uppercase blue"><i class="icon ion-ios-cloud-download"></i> Download</button></a>
     </div>
   </header>
-  <section class="row" id="buttons">
+  <section class="row">
     <div class="col-md-6">
-      <div class="card depth-1">
+      <section class="card">
         <h2>Buttons</h2>
         <button class="white">white</button>
         <button class="red">red</button>
@@ -77,20 +76,90 @@
         <button class="uppercase green">uppercase green</button>
         <button disabled="disabled">[disabled]</button>
         <button class="indigo"><i class="icon ion-ios-cart"></i> Icon button</button>
-      </div>
+      </section>
+
+      <section class="card" id="panels">
+        <h2>Panels</h2>
+        <section class="panel">
+          <header>I am a header</header>
+          <main>This is where the content goes...</main>
+        </section>
+      </section>
+
+      <section class="card" id="typography">
+        <h2>Typography</h2>
+
+        <h1>I'm a h1</h1>
+        <h2>I'm a h2</h2>
+        <h3>I'm a h3</h3>
+        <h4>I'm a h4</h4>
+        <h5>I'm a h5</h5>
+        <h6>I'm a h6</h6>
+
+        <p><strong>Bavaria</strong> <em>ipsum dolor sit</em> amet schnacksln um Godds wujn do obacht do legst di nieda d’ Weibaleid a bissal, da. Unbandig singd Enzian af, vui wolpern schaugn Maßkruag. Ded du dadst ma scho daugn gwiss, um Godds wujn Hemad Radler i daad a ganze Hoiwe! Woibbadinga Klampfn Haberertanz Edlweiss Schneid jo mei boarischer de Sonn damischa ozapfa umananda. Großherzig hod hogg ma uns zamm Gstanzl ded hogg di hera.</p>
+
+        <blockquote>Try and fail, but never fail to try.</blockquote>
+
+        <pre>&lt;link rel="stylesheet" type="text/css" href="//whatever"&gt;</pre>
+      </section>
+
+      <section id="grid-system">
+        <div class="card">
+          <h2>12-column grid system</h2>
+          <div class="row demo">
+            <div class="col-1 red-bg">col-1<br> red-bg</div>
+            <div class="col-1 pink-bg">col-1<br> pink-bg</div>
+            <div class="col-1 purple-bg">col-1<br> purple-bg</div>
+            <div class="col-1 deep-purple-bg">col-1<br> deep-purple-bg</div>
+            <div class="col-1 indigo-bg">col-1<br> indigo-bg</div>
+            <div class="col-1 indigo-bg">col-1<br> indigo-bg</div>
+            <div class="col-1 blue-bg">col-1<br> blue-bg</div>
+            <div class="col-1 light-blue-bg">col-1<br> light-blue-bg</div>
+            <div class="col-1 cyan-bg">col-1<br> cyan-bg</div>
+            <div class="col-1 teal-bg">col-1<br> teal-bg</div>
+            <div class="col-1 green-bg">col-1<br> green-bg</div>
+            <div class="col-1 light-green-bg">col-1<br> light-green-bg</div>
+          </div>
+          <div class="row demo">
+            <div class="col-2 lime-bg">col-2<br> lime-bg</div>
+            <div class="col-3 yellow-bg">col-3<br> yellow-bg</div>
+            <div class="col-4 amber-bg">col-4<br> amber-bg</div>
+            <div class="col-3 orange-bg">col-3<br> orange-bg</div>
+          </div>
+          <div class="row demo">
+            <div class="col-6 deep-orange-bg">col-1<br> deep-orange-bg</div>
+            <div class="col-3 brown-bg">col-3<br> brown-bg</div>
+            <div class="col-1 grey-bg">col-1<br> grey-bg</div>
+            <div class="col-2 blue-grey-bg">col-2<br> blue-grey-bg</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>It's also responsive!</h2>
+
+          <div class="row demo">
+            <div class="col-sm-6 red-bg">col-sm-6<br> red-bg</div>
+            <div class="col-sm-6 yellow-bg">col-sm-6<br> yellow-bg</div>
+          </div>
+          <div class="row demo">
+            <div class="col-md-6 lime-bg">col-md-6<br> lime-bg</div>
+            <div class="col-md-6 grey-bg">col-md-6<br> grey-bg</div>
+          </div>
+          <div class="row demo">
+            <div class="col-lg-6 blue-grey-bg">col-lg-6<br> blue-grey-bg</div>
+            <div class="col-lg-6 cyan-bg">col-lg-6<br> cyan-bg</div>
+          </div>
+          <div class="row demo">
+            <div class="col-xl-6 teal-bg">col-xl-6<br> teal-bg</div>
+            <div class="col-xl-6 purple-bg">col-xl-6<br> purple-bg</div>
+          </div>
+        </div>
+      </section>
+    
     </div>
     <div class="col-md-6">
-      <div class="card depth-1">
 
-        <script src="https://gist.github.com/alexanderGugel/a20d920f6c4e059c6cb4.js"></script>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="row" id="depth">
-    <div class="col-md-6">
-      <div class="card depth-1">
+      <section class="card" id="depth">
         <h2>Material design like shadows</h2>
         <div class="row">
           <div class="col-md-6">
@@ -112,74 +181,9 @@
             <div class="card depth-5">card depth-5</div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card depth-1">
-        <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="row" id="grid-system">
-    <div class="col-12 col-xl-6">
-      <div class="card depth-3">
-        <h2>12-column grid system</h2>
-        <div class="row demo">
-          <div class="col-1 red-bg">col-1<br> red-bg</div>
-          <div class="col-1 pink-bg">col-1<br> pink-bg</div>
-          <div class="col-1 purple-bg">col-1<br> purple-bg</div>
-          <div class="col-1 deep-purple-bg">col-1<br> deep-purple-bg</div>
-          <div class="col-1 indigo-bg">col-1<br> indigo-bg</div>
-          <div class="col-1 indigo-bg">col-1<br> indigo-bg</div>
-          <div class="col-1 blue-bg">col-1<br> blue-bg</div>
-          <div class="col-1 light-blue-bg">col-1<br> light-blue-bg</div>
-          <div class="col-1 cyan-bg">col-1<br> cyan-bg</div>
-          <div class="col-1 teal-bg">col-1<br> teal-bg</div>
-          <div class="col-1 green-bg">col-1<br> green-bg</div>
-          <div class="col-1 light-green-bg">col-1<br> light-green-bg</div>
-        </div>
-        <div class="row demo">
-          <div class="col-2 lime-bg">col-2<br> lime-bg</div>
-          <div class="col-3 yellow-bg">col-3<br> yellow-bg</div>
-          <div class="col-4 amber-bg">col-4<br> amber-bg</div>
-          <div class="col-3 orange-bg">col-3<br> orange-bg</div>
-        </div>
-        <div class="row demo">
-          <div class="col-6 deep-orange-bg">col-1<br> deep-orange-bg</div>
-          <div class="col-3 brown-bg">col-3<br> brown-bg</div>
-          <div class="col-1 grey-bg">col-1<br> grey-bg</div>
-          <div class="col-2 blue-grey-bg">col-2<br> blue-grey-bg</div>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-xl-6">
-      <div class="card depth-3">
-        <h2>It's also responsive!</h2>
-
-        <div class="row demo">
-          <div class="col-sm-6 red-bg">col-sm-6<br> red-bg</div>
-          <div class="col-sm-6 yellow-bg">col-sm-6<br> yellow-bg</div>
-        </div>
-        <div class="row demo">
-          <div class="col-md-6 lime-bg">col-md-6<br> lime-bg</div>
-          <div class="col-md-6 grey-bg">col-md-6<br> grey-bg</div>
-        </div>
-        <div class="row demo">
-          <div class="col-lg-6 blue-grey-bg">col-lg-6<br> blue-grey-bg</div>
-          <div class="col-lg-6 cyan-bg">col-lg-6<br> cyan-bg</div>
-        </div>
-        <div class="row demo">
-          <div class="col-xl-6 teal-bg">col-xl-6<br> teal-bg</div>
-          <div class="col-xl-6 purple-bg">col-xl-6<br> purple-bg</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="row" id="pager">
-    <div class="col-md-6">
-      <div class="card depth-1">
+      <section class="card" id="pagers">
         <h2>Pagers</h2>
         <ol class="pager">
           <li><a href="#">«</a></li>
@@ -189,19 +193,10 @@
           <li><a href="#">4</a></li>
           <li><a href="#">»</a></li>
         </ol>
-      </div>
-    </div>
+        <p>Pagination is present of probably 90% of the website out there. Pagers don't bloat the library and are pretty useful.</p>
+      </section>
 
-    <div class="col-md-6">
-      <div class="card depth-1">
-        <!-- // <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script> -->
-      </div>
-    </div>
-  </section>
-
-  <section class="row" id="alerts">
-    <div class="col-md-6">
-      <div class="card depth-1">
+      <section class="card" id="alerts">
         <h2>Alerts</h2>
         <div class="alert alert-success" role="alert">
           <strong>Well done!</strong> You successfully read this important alert message.
@@ -215,21 +210,27 @@
         <div class="alert alert-danger" role="alert">
           <strong>Oh snap!</strong> Change a few things up and try submitting again.
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="col-md-6">
-      <div class="card depth-1">
-        <!-- // <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script> -->
-      </div>
-    </div>
-  </section>
+      <section class="card" id="inputs">
+        <h2>Inputs</h2>
 
-  <section class="row" id="tables">
-    <div class="col-md-6">
-      <div class="card depth-1">
+        <div>
+          <input type="text" placeholder="Your name">
+        </div>
+        <div>
+          <input type="text" placeholder="[disabled]" disabled="disabled">
+          <input type="text" value="[readonly]" readonly="readonly">
+        </div>
+
+        <h2>Textareas</h2>
+
+        <textarea>I'm a textarea.</textarea>
+        <textarea class="full-width">I'm a textarea.</textarea>
+      </section>
+
+      <section class="card" id="tables">
         <h2>Basic Tables</h2>
-
         <table>
           <thead>
             <tr>
@@ -440,89 +441,9 @@
             </tr>
           </tbody>
         </table>
+      </section>
 
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card depth-1">
-        <!-- // <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script> -->
-      </div>
     </div>
   </section>
-
-  <section class="row" id="inputs">
-    <div class="col-md-6">
-      <div class="card depth-1">
-        <h2>Inputs</h2>
-
-        <div>
-          <input type="text" placeholder="Your name">
-        </div>
-        <div>
-          <input type="text" placeholder="[disabled]" disabled="disabled">
-          <input type="text" value="[readonly]" readonly="readonly">
-        </div>
-
-        <h2>Textareas</h2>
-
-        <textarea>I'm a textarea.</textarea>
-        <textarea class="full-width">I'm a textarea.</textarea>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card depth-1">
-        <!-- // <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script> -->
-      </div>
-    </div>
-  </section>
-
-  <section class="row" id="panels">
-    <div class="col-md-6">
-      <div class="card depth-1">
-        <h2>Panels</h2>
-
-        <section class="panel">
-          <header>I am a header</header>
-          <main>This is where the content goes...</main>
-        </section>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card depth-1">
-        <!-- // <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script> -->
-      </div>
-    </div>
-  </section>
-
-  <section class="row" id="typography">
-    <div class="col-md-6">
-      <div class="card depth-1">
-        <h2>Typography</h2>
-
-        <h1>I'm a h1</h1>
-        <h2>I'm a h2</h2>
-        <h3>I'm a h3</h3>
-        <h4>I'm a h4</h4>
-        <h5>I'm a h5</h5>
-        <h6>I'm a h6</h6>
-
-        <p><strong>Bavaria</strong> <em>ipsum dolor sit</em> amet schnacksln um Godds wujn do obacht do legst di nieda d’ Weibaleid a bissal, da. Unbandig singd Enzian af, vui wolpern schaugn Maßkruag. Ded du dadst ma scho daugn gwiss, um Godds wujn Hemad Radler i daad a ganze Hoiwe! Woibbadinga Klampfn Haberertanz Edlweiss Schneid jo mei boarischer de Sonn damischa ozapfa umananda. Großherzig hod hogg ma uns zamm Gstanzl ded hogg di hera.</p>
-
-        <blockquote>Try and fail, but never fail to try.</blockquote>
-
-        <pre>&lt;link rel="stylesheet" type="text/css" href="//whatever"&gt;</pre>
-      </div>
-    </div>
-
-    <div class="col-md-6">
-      <div class="card depth-1">
-        <!-- // <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script> -->
-      </div>
-    </div>
-  </section>
-
 </body>
 </html>
