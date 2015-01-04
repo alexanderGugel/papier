@@ -617,6 +617,13 @@ pre {
 .bg-blue-grey {
   background: #607d8b;
 }
+[class*='bg-'] {
+  color: #fff;
+}
+.bg-subtle,
+.bg-white {
+  color: #000;
+}
 .card {
   padding: 0.25em;
   margin: 0.25em;
@@ -860,12 +867,6 @@ button:hover {
   transform: translateY(-2px);
   opacity: 1;
 }
-button[class*='bg-'] {
-  color: #fff;
-}
-button[class*='bg-'] a {
-  color: #fff;
-}
 button,
 button.bg-white {
   color: #000;
@@ -1045,14 +1046,6 @@ hr {
 .panel header {
   font-weight: bold;
   border-bottom: 1px solid #eee;
-}
-.panel header[class*='bg-'] {
-  color: #fff;
-}
-.panel header.bg-white,
-.panel header.bg-yellow,
-.panel header.bg-subtle {
-  color: #000;
 }
 @media screen and (min-width: 568px) {
   .panel header,

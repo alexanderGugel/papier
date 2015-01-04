@@ -48,7 +48,7 @@
 
 .bg-no { background: none; }
 .bg-subtle { background: $subtle; }
-.bg-white { background: $white; }
+.bg-white { background: $white;}
 .bg-red { background: $red; }
 .bg-pink { background: $pink; }
 .bg-purple { background: $purple; }
@@ -68,3 +68,9 @@
 .bg-brown { background: $brown; }
 .bg-grey { background: $grey; }
 .bg-blue-grey { background: $blue-grey; }
+
+&[class*='bg-'] {
+  color: #fff;
+}
+
+.bg-subtle, .bg-white { color: #000; }
