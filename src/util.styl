@@ -18,7 +18,6 @@
 .outer-seamless { margin: 0; }
 
 .subtle { opacity: 0.5; }
-.subtle-bg { background: rgba(0, 0, 0, 0.05); }
 .full-width { width: 100%; }
 
 .uppercase { text-transform: uppercase; }
@@ -47,24 +46,34 @@
 
 .hidden { display: none; }
 
-.no-bg { background: none; }
-.white-bg { background: $white; }
-.red-bg { background: $red; }
-.pink-bg { background: $pink; }
-.purple-bg { background: $purple; }
-.deep-purple-bg { background: $deep-purple; }
-.indigo-bg { background: $indigo; }
-.blue-bg { background: $blue; }
-.light-blue-bg { background: $light-blue; }
-.cyan-bg { background: $cyan; }
-.teal-bg { background: $teal; }
-.green-bg { background: $green; }
-.light-green-bg { background: $light-green; }
-.lime-bg { background: $lime; }
-.yellow-bg { background: $yellow; }
-.amber-bg { background: $amber; }
-.orange-bg { background: $orange; }
-.deep-orange-bg { background: $deep-orange; }
-.brown-bg { background: $brown; }
-.grey-bg { background: $grey; }
-.blue-grey-bg { background: $blue-grey; }
+.bg-no { background: none; }
+.bg-subtle { background: $subtle; }
+.bg-white { background: $white;}
+.bg-red { background: $red; }
+.bg-pink { background: $pink; }
+.bg-purple { background: $purple; }
+.bg-deep-purple { background: $deep-purple; }
+.bg-indigo { background: $indigo; }
+.bg-blue { background: $blue; }
+.bg-light-blue { background: $light-blue; }
+.bg-cyan { background: $cyan; }
+.bg-teal { background: $teal; }
+.bg-green { background: $green; }
+.bg-light-green { background: $light-green; }
+.bg-lime { background: $lime; }
+.bg-yellow { background: $yellow; }
+.bg-amber { background: $amber; }
+.bg-orange { background: $orange; }
+.bg-deep-orange { background: $deep-orange; }
+.bg-brown { background: $brown; }
+.bg-grey { background: $grey; }
+.bg-blue-grey { background: $blue-grey; }
+
+&[class*='bg-'] {
+  a {
+    color: #fff;
+  }
+  color: #fff;
+}
+
+.bg-subtle, .bg-white { color: #000; }

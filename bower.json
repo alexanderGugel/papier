@@ -1,11 +1,11 @@
 {
   "name": "papier",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/alexanderGugel/papier",
   "authors": [
     "Alexander Gugel <alexander.gugel@gmail.com>"
   ],
-  "description": "Just another CSS framework (WIP)",
+  "description": "Just another CSS framework",
   "license": "ISC",
   "ignore": [
     "**/.*",
