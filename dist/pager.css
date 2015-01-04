@@ -126,7 +126,7 @@ hr {
 }
 .pager {
   list-style: none;
-  margin: 0.25em;
+  margin-bottom: 0.25em;
   padding: 0;
   display: inline-block;
 }

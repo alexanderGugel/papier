@@ -5,7 +5,7 @@ button,
 input,
 textarea {
   box-sizing: border-box;
-  font: $font;
+  font: 400 16px 'Source Sans Pro', 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
 *,
 *:before,

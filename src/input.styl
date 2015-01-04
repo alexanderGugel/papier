@@ -2,14 +2,14 @@
 
 textarea, input {
   border: 0;
-  margin: 0.25em;
+  margin-bottom: 0.25em;
   padding: 0.5em;
   border-radius: 2px;
   border: 1px solid #ccc;
-  @extend .depth-1;
+  box-sizing: border-box;
 }
 
-[disabled] {
+html input[disabled], html textarea[disabled] {
   background: #eee;
   cursor: not-allowed;
 }
@@ -17,4 +17,12 @@ textarea, input {
 [readonly] {
   background: #eee;
   color: #000;
+}
+
+textarea:focus, input:focus {
+  transition: all 250ms;
+  transform: translateY(-1px);
+  outline: 0;
+  border: 1px solid $blue;
+  @extend .depth-1;
 }

@@ -431,7 +431,7 @@ button,
 input,
 textarea {
   box-sizing: border-box;
-  font: $font;
+  font: 400 16px 'Source Sans Pro', 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
 *,
 *:before,
@@ -698,8 +698,8 @@ p {
 }
 .depth-1,
 button,
-textarea,
-input,
+textarea:focus,
+input:focus,
 .pager {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -831,7 +831,7 @@ button {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   text-shadow: 1px 1px rgba(255,255,255,0.1);
   outline: 0;
-  margin: 0.25em;
+  margin-bottom: 0.25em;
   transition: all 100ms;
   opacity: 0.9;
 }
@@ -948,12 +948,14 @@ button.blue-grey {
 textarea,
 input {
   border: 0;
-  margin: 0.25em;
+  margin-bottom: 0.25em;
   padding: 0.5em;
   border-radius: 2px;
   border: 1px solid #ccc;
+  box-sizing: border-box;
 }
-[disabled] {
+html input[disabled],
+html textarea[disabled] {
   background: #eee;
   cursor: not-allowed;
 }
@@ -961,9 +963,16 @@ input {
   background: #eee;
   color: #000;
 }
+textarea:focus,
+input:focus {
+  transition: all 250ms;
+  transform: translateY(-1px);
+  outline: 0;
+  border: 1px solid #2196f3;
+}
 .pager {
   list-style: none;
-  margin: 0.25em;
+  margin-bottom: 0.25em;
   padding: 0;
   display: inline-block;
 }
@@ -1015,6 +1024,7 @@ input {
 }
 table {
   border: 1px solid #eee;
+  margin-bottom: 0.25em;
 }
 thead {
   background: #eee;
@@ -1035,4 +1045,8 @@ tr:last-child {
 }
 .zebra > *:nth-child(odd) {
   background: #fff;
+}
+.hover > *:hover {
+  transition: all 250ms;
+  background: #e5f7ff;
 }

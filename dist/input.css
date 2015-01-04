@@ -2,8 +2,8 @@
   box-shadow: none;
 }
 .depth-1,
-textarea,
-input {
+textarea:focus,
+input:focus {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .depth-2 {
@@ -128,16 +128,25 @@ hr {
 textarea,
 input {
   border: 0;
-  margin: 0.25em;
+  margin-bottom: 0.25em;
   padding: 0.5em;
   border-radius: 2px;
   border: 1px solid #ccc;
+  box-sizing: border-box;
 }
-[disabled] {
+html input[disabled],
+html textarea[disabled] {
   background: #eee;
   cursor: not-allowed;
 }
 [readonly] {
   background: #eee;
   color: #000;
+}
+textarea:focus,
+input:focus {
+  transition: all 250ms;
+  transform: translateY(-1px);
+  outline: 0;
+  border: 1px solid $blue;
 }

@@ -1,5 +1,6 @@
 table {
   border: 1px solid #eee;
+  margin-bottom: 0.25em;
 }
 thead {
   background: #eee;
@@ -20,4 +21,8 @@ tr:last-child {
 }
 .zebra > *:nth-child(odd) {
   background: #fff;
+}
+.hover > *:hover {
+  transition: all 250ms;
+  background: #e5f7ff;
 }
