@@ -504,23 +504,43 @@ pre {
 .uppercase {
   text-transform: uppercase;
 }
+@media screen and (min-width: 568px) {
+  .s-padding {
+    padding: 0.5em;
+  }
+  .m-padding {
+    padding: 1em;
+  }
+  .l-padding {
+    padding: 1.5em;
+  }
+  .s-margin {
+    margin: 0.5em;
+  }
+  .m-margin {
+    margin: 1em;
+  }
+  .l-margin {
+    margin: 1.5em;
+  }
+}
 .s-padding {
-  padding: 0.5em;
+  padding: 0.25em;
 }
 .m-padding {
-  padding: 1em;
+  padding: 0.5em;
 }
 .l-padding {
-  padding: 1.5em;
+  padding: 0.75em;
 }
 .s-margin {
-  margin: 0.5em;
+  margin: 0.25em;
 }
 .m-margin {
-  margin: 1em;
+  margin: 0.5em;
 }
 .l-margin {
-  margin: 1.5em;
+  margin: 0.75em;
 }
 .left {
   text-align: left;
@@ -598,9 +618,15 @@ pre {
   background: #607d8b;
 }
 .card {
-  padding: 0.5em;
-  margin: 0.5em;
+  padding: 0.25em;
+  margin: 0.25em;
   background: #fff;
+}
+@media screen and (min-width: 568px) {
+  .card {
+    padding: 0.5em;
+    margin: 0.5em;
+  }
 }
 .row:after {
   content: '';
@@ -824,12 +850,15 @@ button {
   text-shadow: 1px 1px rgba(255,255,255,0.1);
   outline: 0;
   margin-bottom: 0.25em;
-  color: #fff;
+  color: #000;
   transition: all 100ms;
   opacity: 0.9;
 }
+button:last-child {
+  margin-bottom: 0;
+}
 button a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 button:hover {
@@ -862,70 +891,68 @@ button.loose {
 button .icon {
   margin-right: 0.5em;
 }
-button.white {
-  color: #000;
+[class*='button-'] {
+  color: #fff;
 }
-button.white a {
-  color: #000;
-}
-button.white {
+.button-white {
   background: #fff;
+  color: #000;
 }
-button.red {
+.button-red {
   background: #f44336;
 }
-button.pink {
+.button-pink {
   background: #e91e63;
 }
-button.purple {
+.button-purple {
   background: #9c27b0;
 }
-button.deep-purple {
+.button-deep-purple {
   background: #673ab7;
 }
-button.indigo {
+.button-indigo {
   background: #3f51b5;
 }
-button.blue {
+.button-blue {
   background: #2196f3;
 }
-button.light-blue {
+.button-light-blue {
   background: #03a9f4;
 }
-button.cyan {
+.button-cyan {
   background: #00bcd4;
 }
-button.teal {
+.button-teal {
   background: #009688;
 }
-button.green {
+.button-green {
   background: #4caf50;
 }
-button.light-green {
+.button-light-green {
   background: #8bc34a;
 }
-button.lime {
+.button-lime {
   background: #cddc39;
 }
-button.yellow {
+.button-yellow {
   background: #ffeb3b;
 }
-button.amber {
+.button-amber {
   background: #ffc107;
 }
-button.orange {
+.button-orange {
   background: #ff9800;
 }
-button.deep-orange {
+.button-deep-orange {
   background: #ff5722;
 }
-button.brown {
+.button-brown {
   background: #795548;
 }
-button.grey {
+.button-grey {
   background: #9e9e9e;
 }
-button.blue-grey {
+.button-blue-grey {
   background: #607d8b;
 }
 textarea,
@@ -1076,6 +1103,12 @@ hr {
 }
 [class*='panel-'] header {
   color: #fff;
+}
+@media screen and (min-width: 568px) {
+  .panel header,
+  .panel main {
+    padding: 0.75em;
+  }
 }
 .panel.panel-white header {
   background: #fff;
