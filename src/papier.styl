@@ -1,21 +1,12 @@
-/*
- * To extract colors:
- * Array.prototype.slice.call(document.querySelectorAll('.color.main-color')).map(function(el) { return '--' + el.querySelector('.name').innerHTML.toLowerCase() + ': ' + el.querySelector('.hex').innerHTML + ';'; }).join('\n');
- * on http://www.google.com/design/spec/style/color.html#
- */
-
-$font = 400 16px 'Source Sans Pro', 'Helvetica Neue', Helvetica, arial, sans-serif;
-
-@import "../node_modules/normalize.css/normalize.css";
-@import "colors.styl";
-@import "base.styl";
-@import "card.styl";
-@import "grid.styl";
-@import "button.styl";
-@import "input.styl";
-@import "pager.styl";
-@import "alert.styl";
-@import "table.styl";
-@import "util.styl";
+@require "../node_modules/normalize.css/normalize.css";
+@require "base.styl";
+@require "card.styl";
+@require "grid.styl";
+@require "button.styl";
+@require "input.styl";
+@require "pager.styl";
+@require "alert.styl";
+@require "table.styl";
+@require "util.styl";
 
 

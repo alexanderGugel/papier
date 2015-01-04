@@ -2,8 +2,7 @@
   box-shadow: none;
 }
 .depth-1,
-textarea,
-input {
+.pager {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .depth-2 {
@@ -125,19 +124,29 @@ hr {
 .blue-grey-bg {
   background: $blue-grey;
 }
-textarea,
-input {
-  border: 0;
+.pager {
+  list-style: none;
   margin: 0.25em;
-  padding: 0.5em;
-  border-radius: 2px;
-  border: 1px solid #ccc;
+  padding: 0;
+  display: inline-block;
 }
-[disabled] {
-  background: #eee;
-  cursor: not-allowed;
+.pager:after {
+  content: '';
+  display: table;
+  clear: both;
 }
-[readonly] {
-  background: #eee;
+.pager li {
+  margin: 0;
+  padding: 0.5em 0.75em;
+  float: left;
+  display: inline-block;
+  border-right: 1px solid #eee;
+  line-height: 1;
+  vertical-align: middle;
+}
+.pager li a {
+  text-decoration: none;
+}
+.pager li:not(.active) {
   color: #000;
 }

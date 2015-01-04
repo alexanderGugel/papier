@@ -1,8 +1,3 @@
-/*
- * To extract colors:
- * Array.prototype.slice.call(document.querySelectorAll('.color.main-color')).map(function(el) { return '--' + el.querySelector('.name').innerHTML.toLowerCase() + ': ' + el.querySelector('.hex').innerHTML + ';'; }).join('\n');
- * on http://www.google.com/design/spec/style/color.html#
- */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
@@ -436,7 +431,7 @@ button,
 input,
 textarea {
   box-sizing: border-box;
-  font: 400 16px 'Source Sans Pro', 'Helvetica Neue', Helvetica, arial, sans-serif;
+  font: $font;
 }
 *,
 *:before,
@@ -703,6 +698,8 @@ p {
 }
 .depth-1,
 button,
+textarea,
+input,
 .pager {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -718,6 +715,113 @@ button:hover {
 }
 .depth-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.22);
+}
+.subtle {
+  opacity: 0.5;
+}
+.subtle-bg {
+  background: rgba(0,0,0,0.05);
+}
+.full-width {
+  width: 100%;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.s-padding {
+  padding: 0.5em;
+}
+.m-padding {
+  padding: 1em;
+}
+.l-padding {
+  padding: 1.5em;
+}
+.s-margin {
+  margin: 0.5em;
+}
+.m-margin {
+  margin: 1em;
+}
+.l-margin {
+  margin: 1.5em;
+}
+hr {
+  border: 0;
+  border-bottom: 1px solid #eee;
+  margin: 2em 0;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.no-bg {
+  background: none;
+}
+.white-bg {
+  background: #fff;
+}
+.red-bg {
+  background: #f44336;
+}
+.pink-bg {
+  background: #e91e63;
+}
+.purple-bg {
+  background: #9c27b0;
+}
+.deep-purple-bg {
+  background: #673ab7;
+}
+.indigo-bg {
+  background: #3f51b5;
+}
+.blue-bg {
+  background: #2196f3;
+}
+.light-blue-bg {
+  background: #03a9f4;
+}
+.cyan-bg {
+  background: #00bcd4;
+}
+.teal-bg {
+  background: #009688;
+}
+.green-bg {
+  background: #4caf50;
+}
+.light-green-bg {
+  background: #8bc34a;
+}
+.lime-bg {
+  background: #cddc39;
+}
+.yellow-bg {
+  background: #ffeb3b;
+}
+.amber-bg {
+  background: #ffc107;
+}
+.orange-bg {
+  background: #ff9800;
+}
+.deep-orange-bg {
+  background: #ff5722;
+}
+.brown-bg {
+  background: #795548;
+}
+.grey-bg {
+  background: #9e9e9e;
+}
+.blue-grey-bg {
+  background: #607d8b;
 }
 button {
   border: 0;
@@ -841,13 +945,21 @@ button.blue-grey {
   color: #fff;
   background: #607d8b;
 }
+textarea,
 input {
   border: 0;
   margin: 0.25em;
   padding: 0.5em;
   border-radius: 2px;
-/*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
   border: 1px solid #ccc;
+}
+[disabled] {
+  background: #eee;
+  cursor: not-allowed;
+}
+[readonly] {
+  background: #eee;
+  color: #000;
 }
 .pager {
   list-style: none;
@@ -918,110 +1030,9 @@ tr {
 tr:last-child {
   border-bottom: 0;
 }
-.subtle {
-  opacity: 0.5;
+.zebra > *:nth-child(even) {
+  background: #f9f9f9;
 }
-.subtle-bg {
-  background: rgba(0,0,0,0.05);
-}
-.full-width {
-  width: 100%;
-}
-.uppercase {
-  text-transform: uppercase;
-}
-.s-padding {
-  padding: 0.5em;
-}
-.m-padding {
-  padding: 1em;
-}
-.l-padding {
-  padding: 1.5em;
-}
-.s-margin {
-  margin: 0.5em;
-}
-.m-margin {
-  margin: 1em;
-}
-.l-margin {
-  margin: 1.5em;
-}
-hr {
-  border: 0;
-  border-bottom: 1px solid #eee;
-  margin: 2em 0;
-}
-.left {
-  text-align: left;
-}
-.center {
-  text-align: center;
-}
-.right {
-  text-align: right;
-}
-.no-bg {
-  background: none;
-}
-.white-bg {
+.zebra > *:nth-child(odd) {
   background: #fff;
-}
-.red-bg {
-  background: #f44336;
-}
-.pink-bg {
-  background: #e91e63;
-}
-.purple-bg {
-  background: #9c27b0;
-}
-.deep-purple-bg {
-  background: #673ab7;
-}
-.indigo-bg {
-  background: #3f51b5;
-}
-.blue-bg {
-  background: #2196f3;
-}
-.light-blue-bg {
-  background: #03a9f4;
-}
-.cyan-bg {
-  background: #00bcd4;
-}
-.teal-bg {
-  background: #009688;
-}
-.green-bg {
-  background: #4caf50;
-}
-.light-green-bg {
-  background: #8bc34a;
-}
-.lime-bg {
-  background: #cddc39;
-}
-.yellow-bg {
-  background: #ffeb3b;
-}
-.amber-bg {
-  background: #ffc107;
-}
-.orange-bg {
-  background: #ff9800;
-}
-.deep-orange-bg {
-  background: #ff5722;
-}
-.brown-bg {
-  background: #795548;
-}
-.grey-bg {
-  background: #9e9e9e;
-}
-.blue-grey-bg {
-  background: #607d8b;
 }

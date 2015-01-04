@@ -15,3 +15,9 @@ tr {
 tr:last-child {
   border-bottom: 0;
 }
+.zebra > *:nth-child(even) {
+  background: #f9f9f9;
+}
+.zebra > *:nth-child(odd) {
+  background: #fff;
+}

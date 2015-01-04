@@ -17,3 +17,12 @@ tr {
     border-bottom: 0;
   }
 }
+
+.zebra > * {
+  &:nth-child(even) {
+    background: #f9f9f9;
+  }
+  &:nth-child(odd) {
+    background: #fff;
+  }
+}
