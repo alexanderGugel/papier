@@ -14,13 +14,6 @@ button {
     margin-bottom: 0;
   }
 
-  color: #000;
-
-  a {
-    color: #000;
-    text-decoration: none;
-  }
-
   transition: all 100ms;
   opacity: 0.9;
   @extend .depth-1;
@@ -28,6 +21,21 @@ button {
     @extend .depth-3;
     transform: translateY(-2px);
     opacity: 1;
+  }
+
+  &[class*='bg-'] {
+    color: #fff;  
+    a {
+      color: #fff;
+    }
+  }
+}
+
+button, button.bg-white {
+  color: #000;
+  a {
+    color: #000;
+    text-decoration: none;
   }
 }
 
@@ -65,28 +73,3 @@ button .icon {
   margin-right: 0.5em;
 }
 
-
-[class*='button-'] {
-  color: #fff;
-}
-
-.button-white { background: $white; color: #000; }
-.button-red { background: $red; }
-.button-pink { background: $pink; }
-.button-purple { background: $purple; }
-.button-deep-purple { background: $deep-purple; }
-.button-indigo { background: $indigo; }
-.button-blue { background: $blue; }
-.button-light-blue { background: $light-blue; }
-.button-cyan { background: $cyan; }
-.button-teal { background: $teal; }
-.button-green { background: $green; }
-.button-light-green { background: $light-green; }
-.button-lime { background: $lime; }
-.button-yellow { background: $yellow; }
-.button-amber { background: $amber; }
-.button-orange { background: $orange; }
-.button-deep-orange { background: $deep-orange; }
-.button-brown { background: $brown; }
-.button-grey { background: $grey; }
-.button-blue-grey { background: $blue-grey; }

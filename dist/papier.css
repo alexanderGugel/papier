@@ -495,9 +495,6 @@ pre {
 .subtle {
   opacity: 0.5;
 }
-.subtle-bg {
-  background: rgba(0,0,0,0.05);
-}
 .full-width {
   width: 100%;
 }
@@ -554,67 +551,70 @@ pre {
 .hidden {
   display: none;
 }
-.no-bg {
+.bg-no {
   background: none;
 }
-.white-bg {
+.bg-subtle {
+  background: #f8f8f8;
+}
+.bg-white {
   background: #fff;
 }
-.red-bg {
+.bg-red {
   background: #f44336;
 }
-.pink-bg {
+.bg-pink {
   background: #e91e63;
 }
-.purple-bg {
+.bg-purple {
   background: #9c27b0;
 }
-.deep-purple-bg {
+.bg-deep-purple {
   background: #673ab7;
 }
-.indigo-bg {
+.bg-indigo {
   background: #3f51b5;
 }
-.blue-bg {
+.bg-blue {
   background: #2196f3;
 }
-.light-blue-bg {
+.bg-light-blue {
   background: #03a9f4;
 }
-.cyan-bg {
+.bg-cyan {
   background: #00bcd4;
 }
-.teal-bg {
+.bg-teal {
   background: #009688;
 }
-.green-bg {
+.bg-green {
   background: #4caf50;
 }
-.light-green-bg {
+.bg-light-green {
   background: #8bc34a;
 }
-.lime-bg {
+.bg-lime {
   background: #cddc39;
 }
-.yellow-bg {
+.bg-yellow {
   background: #ffeb3b;
 }
-.amber-bg {
+.bg-amber {
   background: #ffc107;
 }
-.orange-bg {
+.bg-orange {
   background: #ff9800;
 }
-.deep-orange-bg {
+.bg-deep-orange {
   background: #ff5722;
 }
-.brown-bg {
+.bg-brown {
   background: #795548;
 }
-.grey-bg {
+.bg-grey {
   background: #9e9e9e;
 }
-.blue-grey-bg {
+.bg-blue-grey {
   background: #607d8b;
 }
 .card {
@@ -850,20 +850,30 @@ button {
   text-shadow: 1px 1px rgba(255,255,255,0.1);
   outline: 0;
   margin-bottom: 0.25em;
-  color: #000;
   transition: all 100ms;
   opacity: 0.9;
 }
 button:last-child {
   margin-bottom: 0;
 }
-button a {
-  color: #000;
-  text-decoration: none;
-}
 button:hover {
   transform: translateY(-2px);
   opacity: 1;
+}
+button[class*='bg-'] {
+  color: #fff;
+}
+button[class*='bg-'] a {
+  color: #fff;
+}
+button,
+button.bg-white {
+  color: #000;
+}
+button a,
+button.bg-white a {
+  color: #000;
+  text-decoration: none;
 }
 button.xs {
   font-size: 0.65em;
@@ -890,70 +900,6 @@ button.loose {
 }
 button .icon {
   margin-right: 0.5em;
-}
-[class*='button-'] {
-  color: #fff;
-}
-.button-white {
-  background: #fff;
-  color: #000;
-}
-.button-red {
-  background: #f44336;
-}
-.button-pink {
-  background: #e91e63;
-}
-.button-purple {
-  background: #9c27b0;
-}
-.button-deep-purple {
-  background: #673ab7;
-}
-.button-indigo {
-  background: #3f51b5;
-}
-.button-blue {
-  background: #2196f3;
-}
-.button-light-blue {
-  background: #03a9f4;
-}
-.button-cyan {
-  background: #00bcd4;
-}
-.button-teal {
-  background: #009688;
-}
-.button-green {
-  background: #4caf50;
-}
-.button-light-green {
-  background: #8bc34a;
-}
-.button-lime {
-  background: #cddc39;
-}
-.button-yellow {
-  background: #ffeb3b;
-}
-.button-amber {
-  background: #ffc107;
-}
-.button-orange {
-  background: #ff9800;
-}
-.button-deep-orange {
-  background: #ff5722;
-}
-.button-brown {
-  background: #795548;
-}
-.button-grey {
-  background: #9e9e9e;
-}
-.button-blue-grey {
-  background: #607d8b;
 }
 textarea,
 input {
@@ -1097,79 +1043,22 @@ hr {
   padding: 0.5em;
 }
 .panel header {
+  font-weight: bold;
   border-bottom: 1px solid #eee;
-  background: #f7f7f7;
-  color: #000;
 }
-[class*='panel-'] header {
+.panel header[class*='bg-'] {
   color: #fff;
+}
+.panel header.bg-white,
+.panel header.bg-yellow,
+.panel header.bg-subtle {
+  color: #000;
 }
 @media screen and (min-width: 568px) {
   .panel header,
   .panel main {
     padding: 0.75em;
   }
-}
-.panel.panel-white header {
-  background: #fff;
-  color: #000;
-}
-.panel.panel-red header {
-  background: #f44336;
-}
-.panel.panel-pink header {
-  background: #e91e63;
-}
-.panel.panel-purple header {
-  background: #9c27b0;
-}
-.panel.panel-deep-purple header {
-  background: #673ab7;
-}
-.panel.panel-indigo header {
-  background: #3f51b5;
-}
-.panel.panel-blue header {
-  background: #2196f3;
-}
-.panel.panel-light-blue header {
-  background: #03a9f4;
-}
-.panel.panel-cyan header {
-  background: #00bcd4;
-}
-.panel.panel-teal header {
-  background: #009688;
-}
-.panel.panel-green header {
-  background: #4caf50;
-}
-.panel.panel-light-green header {
-  background: #8bc34a;
-}
-.panel.panel-lime header {
-  background: #cddc39;
-}
-.panel.panel-yellow header {
-  background: #ffeb3b;
-}
-.panel.panel-amber header {
-  background: #ffc107;
-}
-.panel.panel-orange header {
-  background: #ff9800;
-}
-.panel.panel-deep-orange header {
-  background: #ff5722;
-}
-.panel.panel-brown header {
-  background: #795548;
-}
-.panel.panel-grey header {
-  background: #9e9e9e;
-}
-.panel.panel-blue-grey header {
-  background: #607d8b;
 }
 h1,
 h2,
