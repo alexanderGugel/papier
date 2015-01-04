@@ -1,102 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Papier CSS library</title>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600">
-    <link rel="stylesheet" href="dist/papier.css">
-    <style>
-      #grid-system .row {
-        color: #fff;
-      }
-      
-      #grid-system [class*='col-'] {
-        padding: 5em 0.25em 0.25em;
-        font-size: 0.75em;
-      }
-    </style>
-  </head>
-  <body class="papier subtle-bg">
-    <section class="row">
-      <div class="col-md-6">
-        <div class="card depth-1" id="buttons">
-          <h2>Buttons</h2>
-          <button class="white">white</button>
-          <button class="red">red</button>
-          <button class="pink">pink</button>
-          <button class="purple">purple</button>
-          <button class="deep-purple">deep-purple</button>
-          <button class="indigo">indigo</button>
-          <button class="blue">blue</button>
-          <button class="light-blue">light-blue</button>
-          <button class="cyan">cyan</button>
-          <button class="teal">teal</button>
-          <button class="green">green</button>
-          <button class="light-green">light-green</button>
-          <button class="lime">lime</button>
-          <button class="yellow">yellow</button>
-          <button class="amber">amber</button>
-          <button class="orange">orange</button>
-          <button class="deep-orange">deep-orange</button>
-          <button class="brown">brown</button>
-          <button class="grey">grey</button>
-          <button class="blue-grey">blue-grey</button>
-        </div>
-      </div>
-      <div class="col-6" id="forms">
-        <div class="card depth-1">
-          <input type="text" placeholder="type=text">
-          <input type="text" class="full-width" placeholder="type=text full-width">
+<head>
+  <meta charset="utf-8">
+  <title>Papier CSS library</title>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css">
+  <link rel="stylesheet" href="dist/papier.css">
+  <style>
+    header {
+    }
 
+    header .logo {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 5px solid #000;
+    }
+
+    #grid-system .row {
+      color: #fff;
+    }
+
+    #grid-system .demo [class*='col-'] {
+      padding: 5em 0.25em 0.25em;
+      font-size: 0.75em;
+    }
+
+    .gist .gist-file {
+      margin: 0 !important;
+    }
+  </style>
+</head>
+<body class="subtle-bg s-padding">
+  <header class="l-padding">
+    <a href="#" class="logo"><h1><i class="icon ion-paper-airplane"></i> Papier</h1></a>
+    is a minimal, semantic, responsive (< 10k) CSS framework.<br>
+  </header>
+  <section class="row" id="buttons">
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <h2>Buttons</h2>
+        <button class="white">white</button>
+        <button class="red">red</button>
+        <button class="pink">pink</button>
+        <button class="purple">purple</button>
+        <button class="deep-purple">deep-purple</button>
+        <button class="indigo">indigo</button>
+        <button class="blue">blue</button>
+        <button class="light-blue">light-blue</button>
+        <button class="cyan">cyan</button>
+        <button class="teal">teal</button>
+        <button class="green">green</button>
+        <button class="light-green">light-green</button>
+        <button class="lime">lime</button>
+        <button class="yellow">yellow</button>
+        <button class="amber">amber</button>
+        <button class="orange">orange</button>
+        <button class="deep-orange">deep-orange</button>
+        <button class="brown">brown</button>
+        <button class="grey">grey</button>
+        <button class="blue-grey">blue-grey</button>
+
+        <hr>
+
+        <h2>Button sizes</h2>
+        <button class="xs teal">xs teal</button>
+        <button class="s teal">s teal</button>
+        <button class="m teal">m teal</button>
+        <button class="l teal">l teal</button>
+        <button class="xl teal">xl teal</button>
+
+        <hr>
+
+        <h2>Utilities</h2>
+        <button class="loose red">loose red</button>
+        <button class="uppercase green">uppercase green</button>
+        <button disabled="disabled">[disabled]</button>
+        <button class="indigo"><i class="icon ion-ios-cart"></i> Icon button</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card depth-1">
+
+        <script src="https://gist.github.com/alexanderGugel/a20d920f6c4e059c6cb4.js"></script>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="row" id="depth">
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <h2>Material design like shadows</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card depth-0">card depth-0</div>
+          </div>
+          <div class="col-md-6">
+            <div class="card depth-1">card depth-1</div>
+          </div>
+          <div class="col-md-6">
+            <div class="card depth-2">card depth-2</div>
+          </div>
+          <div class="col-md-6">
+            <div class="card depth-3">card depth-3</div>
+          </div>
+          <div class="col-md-6">
+            <div class="card depth-4">card depth-4</div>
+          </div>
+          <div class="col-md-6">
+            <div class="card depth-5">card depth-5</div>
+          </div>
         </div>
       </div>
-    </section>
-<!--     <section class="row">
-      <div class="col-6">
-        <h2>Typography</h2>
+    </div>
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script>
       </div>
-    </section> -->
-    <section id="depth">
-      <div class="no-bg card">
-        <h2>Material-design-like shadows</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-2">
-          <div class="card depth-0">
-            card depth-0
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card depth-1">
-            card depth-1
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card depth-2">
-            card depth-2
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card depth-3">
-            card depth-3
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card depth-4">
-            card depth-4
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="card depth-5">
-            card depth-5
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="grid-system">
+    </div>
+  </section>
+
+  <section class="row" id="grid-system">
+    <div class="col-12 col-xl-6">
       <div class="card depth-3">
         <h2>12-column grid system</h2>
-        <div class="row">
+        <div class="row demo">
           <div class="col-1 red-bg">col-1<br> red-bg</div>
           <div class="col-1 pink-bg">col-1<br> pink-bg</div>
           <div class="col-1 purple-bg">col-1<br> purple-bg</div>
@@ -110,48 +138,350 @@
           <div class="col-1 green-bg">col-1<br> green-bg</div>
           <div class="col-1 light-green-bg">col-1<br> light-green-bg</div>
         </div>
-        <div class="row">
+        <div class="row demo">
           <div class="col-2 lime-bg">col-2<br> lime-bg</div>
           <div class="col-3 yellow-bg">col-3<br> yellow-bg</div>
           <div class="col-4 amber-bg">col-4<br> amber-bg</div>
           <div class="col-3 orange-bg">col-3<br> orange-bg</div>
         </div>
-        <div class="row">
+        <div class="row demo">
           <div class="col-6 deep-orange-bg">col-1<br> deep-orange-bg</div>
           <div class="col-3 brown-bg">col-3<br> brown-bg</div>
           <div class="col-1 grey-bg">col-1<br> grey-bg</div>
           <div class="col-2 blue-grey-bg">col-2<br> blue-grey-bg</div>
         </div>
+      </div>
+    </div>
+    <div class="col-12 col-xl-6">
+      <div class="card depth-3">
+        <h2>It's also responsive!</h2>
 
-        <hr>
-
-        <p>It's also pretty responsive (resize window to try it out).</p>
-
-        <div class="row">
+        <div class="row demo">
           <div class="col-sm-6 red-bg">col-sm-6<br> red-bg</div>
           <div class="col-sm-6 yellow-bg">col-sm-6<br> yellow-bg</div>
         </div>
-        
-        <div class="row">
+        <div class="row demo">
           <div class="col-md-6 lime-bg">col-md-6<br> lime-bg</div>
           <div class="col-md-6 grey-bg">col-md-6<br> grey-bg</div>
         </div>
-
-        <div class="row">
+        <div class="row demo">
           <div class="col-lg-6 blue-grey-bg">col-lg-6<br> blue-grey-bg</div>
           <div class="col-lg-6 cyan-bg">col-lg-6<br> cyan-bg</div>
         </div>
-
-        <div class="row">
+        <div class="row demo">
           <div class="col-xl-6 teal-bg">col-xl-6<br> teal-bg</div>
           <div class="col-xl-6 purple-bg">col-xl-6<br> purple-bg</div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="card depth-4">
-      <p>Disclaimer: I'm not a designer.</p>
-    </footer>
+  <section class="row" id="pager">
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <h2>Pager</h2>
+        <ol class="pager">
+          <li><a href="#">«</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li class="active">3</li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">»</a></li>
+        </ol>
+      </div>
+    </div>
 
-  </body>
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <!-- // <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="row" id="alerts">
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <h2>Alerts</h2>
+        <div class="alert alert-success" role="alert">
+          <strong>Well done!</strong> You successfully read this important alert message.
+        </div>
+        <div class="alert alert-info" role="alert">
+          <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+        </div>
+        <div class="alert alert-warning" role="alert">
+          <strong>Warning!</strong> Better check yourself, you're not looking too good.
+        </div>
+        <div class="alert alert-danger" role="alert">
+          <strong>Oh snap!</strong> Change a few things up and try submitting again.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <!-- // <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script> -->
+      </div>
+    </div>
+  </section>
+
+  <section class="row" id="tables">
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <h2>Basic Tables</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Make</th>
+              <th>Model</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Honda</td>
+              <td>Accord</td>
+              <td>2009</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Toyota</td>
+              <td>Camry</td>
+              <td>2012</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Hyundai</td>
+              <td>Elantra</td>
+              <td>2010</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Zebra Tables</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Make</th>
+              <th>Model</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+
+          <tbody class="zebra">
+            <tr>
+              <td>1</td>
+              <td>Honda</td>
+              <td>Accord</td>
+              <td>2009</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Toyota</td>
+              <td>Camry</td>
+              <td>2012</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Hyundai</td>
+              <td>Elantra</td>
+              <td>2010</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>Cars</td>
+              <td>Accord</td>
+              <td>2012</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>Are</td>
+              <td>BMW</td>
+              <td>2010</td>
+            </tr>
+            
+            <tr>
+              <td>6</td>
+              <td>Obsolete</td>
+              <td>BMW</td>
+              <td>2010</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Full-width Tables</h2>
+
+        <table class="full-width">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Make</th>
+              <th>Model</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+
+          <tbody class="zebra">
+            <tr>
+              <td>1</td>
+              <td>Honda</td>
+              <td>Accord</td>
+              <td>2009</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Toyota</td>
+              <td>Camry</td>
+              <td>2012</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Hyundai</td>
+              <td>Elantra</td>
+              <td>2010</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>Cars</td>
+              <td>Accord</td>
+              <td>2012</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>Are</td>
+              <td>BMW</td>
+              <td>2010</td>
+            </tr>
+            
+            <tr>
+              <td>6</td>
+              <td>Obsolete</td>
+              <td>BMW</td>
+              <td>2010</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Hover Tables</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Make</th>
+              <th>Model</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+
+          <tbody class="hover">
+            <tr>
+              <td>1</td>
+              <td>Honda</td>
+              <td>Accord</td>
+              <td>2009</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Toyota</td>
+              <td>Camry</td>
+              <td>2012</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Hyundai</td>
+              <td>Elantra</td>
+              <td>2010</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>Cars</td>
+              <td>Accord</td>
+              <td>2012</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>Are</td>
+              <td>BMW</td>
+              <td>2010</td>
+            </tr>
+            
+            <tr>
+              <td>6</td>
+              <td>Obsolete</td>
+              <td>BMW</td>
+              <td>2010</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <!-- // <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script> -->
+      </div>
+    </div>
+  </section>
+
+
+  <section class="row" id="inputs">
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <h2>Inputs</h2>
+
+        <div>
+          <input type="text" placeholder="Your name">
+        </div>
+        <div>
+          <input type="text" placeholder="[disabled]" disabled="disabled">
+          <input type="text" value="[readonly]" readonly="readonly">
+        </div>
+
+        <h2>Textareas</h2>
+
+        <textarea>I'm a textarea.</textarea>
+        <textarea class="full-width">I'm a textarea.</textarea>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <!-- // <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script> -->
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="card depth-4">
+    <p>Disclaimer: I'm not a designer.</p>
+  </footer>
+
+</body>
 </html>

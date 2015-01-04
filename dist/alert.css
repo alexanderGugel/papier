@@ -1,0 +1,26 @@
+.alert {
+  padding: 0.5em;
+  margin-bottom: 0.25em;
+  border-radius: 2px;
+}
+@media screen and (min-width: 568px) {
+  .alert {
+    padding: 1em;
+  }
+}
+.alert.alert-success {
+  background: #dbefdc;
+  color: #265828;
+}
+.alert.alert-info {
+  background: #d3eafd;
+  color: #074c83;
+}
+.alert.alert-warning {
+  background: #ffeacc;
+  color: #804c00;
+}
+.alert.alert-danger {
+  background: #fdd9d7;
+  color: #8d1108;
+}

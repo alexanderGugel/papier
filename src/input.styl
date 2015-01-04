@@ -1,0 +1,28 @@
+@require "util.styl";
+
+textarea, input {
+  border: 0;
+  margin-bottom: 0.25em;
+  padding: 0.5em;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+html input[disabled], html textarea[disabled] {
+  background: #eee;
+  cursor: not-allowed;
+}
+
+[readonly] {
+  background: #eee;
+  color: #000;
+}
+
+textarea:focus, input:focus {
+  transition: all 250ms;
+  transform: translateY(-1px);
+  outline: 0;
+  border: 1px solid $blue;
+  @extend .depth-1;
+}

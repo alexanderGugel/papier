@@ -1,0 +1,29 @@
+@require "util.styl";
+
+.pager {
+  list-style: none;
+  margin-bottom: 0.25em;
+  padding: 0;
+  display: inline-block;
+  @extend .depth-1;
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  li {
+    margin: 0;
+    padding: 0.5em 0.75em;
+    float: left;
+    display: inline-block;
+    border-right: 1px solid #eee;
+    line-height: 1;
+    vertical-align: middle;
+    a {
+      text-decoration: none;
+    }
+    &:not(.active) {
+      color: #000;
+    }
+  }
+}

@@ -1,14 +1,17 @@
+@require "config.styl";
+
 /* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 /* apply a natural box layout model to all elements, but allowing components to change */
-html {
+html, button, input, textarea {
   box-sizing: border-box;
-  font: var(--font);
+  font: $font;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  /*margin: 0;*/
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0.5em 0.25em 0.5em;
+  padding: 0;
 }
