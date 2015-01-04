@@ -2,7 +2,10 @@
 
 .pager {
   list-style: none;
-  margin-bottom: 0.25em;
+  margin-top: 0.5em;
+  &:first-child {
+    margin-top: 0;
+  }
   padding: 0;
   display: inline-block;
   @extend .depth-1;
@@ -19,11 +22,17 @@
     border-right: 1px solid #eee;
     line-height: 1;
     vertical-align: middle;
+    transition: all 250ms;
     a {
       text-decoration: none;
-    }
-    &:not(.active) {
       color: #000;
+    }
+    &.active {
+      background: #f2f2f2;
+      font-weight: bold;
+    }
+    &:hover {
+      background: #eee;
     }
   }
 }

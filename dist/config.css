@@ -1,5 +1,0 @@
-/*
- * To extract colors:
- * Array.prototype.slice.call(document.querySelectorAll('.color.main-color')).map(function(el) { return '--' + el.querySelector('.name').innerHTML.toLowerCase() + ': ' + el.querySelector('.hex').innerHTML + ';'; }).join('\n');
- * on http://www.google.com/design/spec/style/color.html#
- */

@@ -2,7 +2,10 @@
 
 table {
   border: 1px solid #eee;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 thead {
@@ -31,8 +34,8 @@ tr {
 }
 
 .hover > * {
+  transition: all 250ms;
   &:hover {
-    transition: all 250ms;
     background: lighten($light-blue, 90%);
   }
 }
