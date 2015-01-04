@@ -620,6 +620,9 @@ pre {
 [class*='bg-'] {
   color: #fff;
 }
+[class*='bg-'] a {
+  color: #fff;
+}
 .bg-subtle,
 .bg-white {
   color: #000;
