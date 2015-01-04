@@ -1067,15 +1067,3 @@ hr {
   border-bottom: 1px solid #eee;
   background: #f7f7f7;
 }
-.panel-success {
-  background: #dbefdc;
-}
-.panel-info {
-  background: #d3eafd;
-}
-.panel-warning {
-  background: #ffeacc;
-}
-.panel-danger {
-  background: #fdd9d7;
-}
