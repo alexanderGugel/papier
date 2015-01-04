@@ -450,7 +450,7 @@ h4,
 h5,
 h6,
 p {
-  margin: 0.5em 0;
+  margin: 0.5em 0.25em 0.5em;
   padding: 0;
 }
 .round-1 {
@@ -702,7 +702,8 @@ p {
   box-shadow: none;
 }
 .depth-1,
-button {
+button,
+.pager {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .depth-2 {
@@ -847,6 +848,75 @@ input {
   border-radius: 2px;
 /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
   border: 1px solid #ccc;
+}
+.pager {
+  list-style: none;
+  margin: 0.25em;
+  padding: 0;
+  display: inline-block;
+}
+.pager:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.pager li {
+  margin: 0;
+  padding: 0.5em 0.75em;
+  float: left;
+  display: inline-block;
+  border-right: 1px solid #eee;
+  line-height: 1;
+  vertical-align: middle;
+}
+.pager li a {
+  text-decoration: none;
+}
+.pager li:not(.active) {
+  color: #000;
+}
+.alert {
+  padding: 0.5em;
+  margin-bottom: 0.25em;
+  border-radius: 2px;
+}
+@media screen and (min-width: 568px) {
+  .alert {
+    padding: 1em;
+  }
+}
+.alert.alert-success {
+  background: #dbefdc;
+  color: #265828;
+}
+.alert.alert-info {
+  background: #d3eafd;
+  color: #074c83;
+}
+.alert.alert-warning {
+  background: #ffeacc;
+  color: #804c00;
+}
+.alert.alert-danger {
+  background: #fdd9d7;
+  color: #8d1108;
+}
+table {
+  border: 1px solid #eee;
+}
+thead {
+  background: #eee;
+}
+th,
+td {
+  padding: 0.5em;
+  border-right: 1px solid #eee;
+}
+tr {
+  border-bottom: 1px solid #eee;
+}
+tr:last-child {
+  border-bottom: 0;
 }
 .subtle {
   opacity: 0.5;

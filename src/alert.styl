@@ -1,0 +1,28 @@
+.alert {
+  padding: 0.5em;
+  margin-bottom: 0.25em;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 568px) {
+  .alert {
+    padding: 1em;
+  }
+}
+
+.alert.alert-success {
+  background: lighten($green, 80%);
+  color: darken($green, 50%);
+}
+.alert.alert-info {
+  background: lighten($blue, 80%);
+  color: darken($blue, 50%);
+}
+.alert.alert-warning {
+  background: lighten($orange, 80%);
+  color: darken($orange, 50%);
+}
+.alert.alert-danger {
+  background: lighten($red, 80%);
+  color: darken($red, 50%);
+}
