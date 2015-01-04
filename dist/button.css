@@ -137,8 +137,13 @@ button {
   text-shadow: 1px 1px rgba(255,255,255,0.1);
   outline: 0;
   margin-bottom: 0.25em;
+  color: #fff;
   transition: all 100ms;
   opacity: 0.9;
+}
+button a {
+  color: #fff;
+  text-decoration: none;
 }
 button:hover {
   transform: translateY(-2px);
@@ -170,83 +175,71 @@ button.loose {
 button .icon {
   margin-right: 0.5em;
 }
-button.white {
+button.white,
+button.yellow {
   color: #000;
+}
+button.white a,
+button.yellow a {
+  color: #000;
+}
+button.white {
   background: #fff;
 }
 button.red {
-  color: #fff;
   background: #f44336;
 }
 button.pink {
-  color: #fff;
   background: #e91e63;
 }
 button.purple {
-  color: #fff;
   background: #9c27b0;
 }
 button.deep-purple {
-  color: #fff;
   background: #673ab7;
 }
 button.indigo {
-  color: #fff;
   background: #3f51b5;
 }
 button.blue {
-  color: #fff;
   background: #2196f3;
 }
 button.light-blue {
-  color: #fff;
   background: #03a9f4;
 }
 button.cyan {
-  color: #fff;
   background: #00bcd4;
 }
 button.teal {
-  color: #fff;
   background: #009688;
 }
 button.green {
-  color: #fff;
   background: #4caf50;
 }
 button.light-green {
-  color: #fff;
   background: #8bc34a;
 }
 button.lime {
-  color: #fff;
   background: #cddc39;
 }
 button.yellow {
-  color: #000;
   background: #ffeb3b;
 }
 button.amber {
-  color: #fff;
   background: #ffc107;
 }
 button.orange {
-  color: #fff;
   background: #ff9800;
 }
 button.deep-orange {
-  color: #fff;
   background: #ff5722;
 }
 button.brown {
-  color: #fff;
   background: #795548;
 }
 button.grey {
-  color: #fff;
   background: #9e9e9e;
 }
 button.blue-grey {
-  color: #fff;
   background: #607d8b;
 }
