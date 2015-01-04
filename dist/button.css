@@ -62,6 +62,9 @@ hr {
 .right {
   text-align: right;
 }
+.hidden {
+  display: none;
+}
 .no-bg {
   background: none;
 }

@@ -22,7 +22,9 @@ tr:last-child {
 .zebra > *:nth-child(odd) {
   background: #fff;
 }
-.hover > *:hover {
+.hover > * {
   transition: all 250ms;
+}
+.hover > *:hover {
   background: #e5f7ff;
 }

@@ -61,6 +61,9 @@ hr {
 .right {
   text-align: right;
 }
+.hidden {
+  display: none;
+}
 .no-bg {
   background: none;
 }
@@ -143,10 +146,15 @@ hr {
   border-right: 1px solid #eee;
   line-height: 1;
   vertical-align: middle;
+  transition: all 250ms;
 }
 .pager li a {
   text-decoration: none;
-}
-.pager li:not(.active) {
   color: #000;
+}
+.pager li.active {
+  color: #ccc;
+}
+.pager li:hover {
+  background: #eee;
 }
