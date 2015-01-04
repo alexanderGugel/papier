@@ -2,14 +2,14 @@
   box-shadow: none;
 }
 .depth-1,
-button {
+.card,
+.panel {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .depth-2 {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-.depth-3,
-button:hover {
+.depth-3 {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .depth-4 {
@@ -21,7 +21,8 @@ button:hover {
 .round-1 {
   border-radius: 1px;
 }
-.round-2 {
+.round-2,
+.card {
   border-radius: 2px;
 }
 .round-3 {
@@ -150,118 +151,31 @@ button:hover {
 .blue-grey-bg {
   background: #607d8b;
 }
-button {
-  border: 0;
-  border-radius: 3px;
-  background: none;
-  padding: 0.5em 1.5em;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  text-shadow: 1px 1px rgba(255,255,255,0.1);
-  outline: 0;
-  margin-bottom: 0.25em;
-  color: #fff;
-  transition: all 100ms;
-  opacity: 0.9;
-}
-button a {
-  color: #fff;
-  text-decoration: none;
-}
-button:hover {
-  transform: translateY(-2px);
-  opacity: 1;
-}
-button.xs {
-  font-size: 0.65em;
-}
-button.s {
-  font-size: 0.75em;
-}
-button.m {
-  font-size: 1em;
-}
-button.l {
-  font-size: 1.25em;
-}
-button.xl {
-  font-size: 1.5em;
-}
-button[disabled],
-button.disabled {
-  background: #eaeaea;
-  color: #a8a8a8;
-}
-button.loose {
-  padding: 1em 2em;
-}
-button .icon {
-  margin-right: 0.5em;
-}
-button.white,
-button.yellow {
-  color: #000;
-}
-button.white a,
-button.yellow a {
-  color: #000;
-}
-button.white {
+.card {
+  padding: 0.5em;
+  margin: 0.5em;
   background: #fff;
 }
-button.red {
-  background: #f44336;
+.panel {
+  margin-bottom: 0.25em;
 }
-button.pink {
-  background: #e91e63;
+.panel header,
+.panel main {
+  padding: 0.5em;
 }
-button.purple {
-  background: #9c27b0;
+.panel header {
+  border-bottom: 1px solid #eee;
+  background: #f7f7f7;
 }
-button.deep-purple {
-  background: #673ab7;
+.panel-success {
+  background: #dbefdc;
 }
-button.indigo {
-  background: #3f51b5;
+.panel-info {
+  background: #d3eafd;
 }
-button.blue {
-  background: #2196f3;
+.panel-warning {
+  background: #ffeacc;
 }
-button.light-blue {
-  background: #03a9f4;
-}
-button.cyan {
-  background: #00bcd4;
-}
-button.teal {
-  background: #009688;
-}
-button.green {
-  background: #4caf50;
-}
-button.light-green {
-  background: #8bc34a;
-}
-button.lime {
-  background: #cddc39;
-}
-button.yellow {
-  background: #ffeb3b;
-}
-button.amber {
-  background: #ffc107;
-}
-button.orange {
-  background: #ff9800;
-}
-button.deep-orange {
-  background: #ff5722;
-}
-button.brown {
-  background: #795548;
-}
-button.grey {
-  background: #9e9e9e;
-}
-button.blue-grey {
-  background: #607d8b;
+.panel-danger {
+  background: #fdd9d7;
 }

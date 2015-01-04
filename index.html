@@ -5,29 +5,7 @@
   <title>Papier CSS library</title>
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css">
-  <link rel="stylesheet" href="dist/papier.css">
-  <style>
-    header {
-    }
-
-    header .logo {
-      color: #000;
-      text-decoration: none;
-    }
-
-    #grid-system .row {
-      color: #fff;
-    }
-
-    #grid-system .demo [class*='col-'] {
-      padding: 5em 0.25em 0.25em;
-      font-size: 0.75em;
-    }
-
-    .gist .gist-file {
-      margin: 0 !important;
-    }
-  </style>
+  <link rel="stylesheet" href="dist/example.css">
 </head>
 <body class="subtle-bg s-padding">
   <header class="l-padding row">
@@ -183,7 +161,7 @@
   <section class="row" id="pager">
     <div class="col-md-6">
       <div class="card depth-1">
-        <h2>Pager</h2>
+        <h2>Pagers</h2>
         <ol class="pager">
           <li><a href="#">«</a></li>
           <li><a href="#">1</a></li>
@@ -454,7 +432,6 @@
     </div>
   </section>
 
-
   <section class="row" id="inputs">
     <div class="col-md-6">
       <div class="card depth-1">
@@ -482,10 +459,24 @@
     </div>
   </section>
 
+  <section class="row" id="panels">
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <h2>Panels</h2>
 
-  <footer class="card depth-4">
-    <p>Disclaimer: I'm not a designer.</p>
-  </footer>
+        <section class="panel">
+          <header>I am a header</header>
+          <main>This is where the content goes...</main>
+        </section>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card depth-1">
+        <!-- // <script src="https://gist.github.com/alexanderGugel/f3a20f8dc42f4726e0d0.js"></script> -->
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>

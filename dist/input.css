@@ -18,6 +18,33 @@ input:focus {
 .depth-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.22);
 }
+.round-1 {
+  border-radius: 1px;
+}
+.round-2 {
+  border-radius: 2px;
+}
+.round-3 {
+  border-radius: 3px;
+}
+.round-4 {
+  border-radius: 4px;
+}
+.round-5 {
+  border-radius: 5px;
+}
+.round-10 {
+  border-radius: 10px;
+}
+.round {
+  border-radius: 100%;
+}
+.inner-seamless {
+  padding: 0;
+}
+.outer-seamless {
+  margin: 0;
+}
 .subtle {
   opacity: 0.5;
 }
@@ -47,11 +74,6 @@ input:focus {
 }
 .l-margin {
   margin: 1.5em;
-}
-hr {
-  border: 0;
-  border-bottom: 1px solid #eee;
-  margin: 2em 0;
 }
 .left {
   text-align: left;
