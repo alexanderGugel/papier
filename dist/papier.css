@@ -438,16 +438,6 @@ textarea {
 *:after {
   box-sizing: inherit;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0.5em 0.25em 0.5em;
-  padding: 0;
-}
 .depth-0 {
   box-shadow: none;
 }
@@ -1066,4 +1056,19 @@ hr {
 .panel header {
   border-bottom: 1px solid #eee;
   background: #f7f7f7;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0.5em 0.25em 0.5em;
+  padding: 0;
+}
+blockquote {
+  padding: 0.5em 0.5em 0.5em 1em;
+  margin: 0 0 0 0.25em;
+  box-shadow: inset 5px 0px #eee;
 }
