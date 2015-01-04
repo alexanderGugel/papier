@@ -980,6 +980,7 @@ input:focus {
 }
 .pager li.active {
   background: #f2f2f2;
+  font-weight: bold;
 }
 .pager li:hover {
   background: #eee;
