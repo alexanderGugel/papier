@@ -463,7 +463,8 @@ button:hover {
 .depth-5 {
   box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.22);
 }
-.round-1 {
+.round-1,
+pre {
   border-radius: 1px;
 }
 .round-2,
@@ -1063,12 +1064,17 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+blockquote,
+pre {
   margin: 0.5em 0.25em 0.5em;
   padding: 0;
 }
 blockquote {
   padding: 0.5em 0.5em 0.5em 1em;
-  margin: 0 0 0 0.25em;
   box-shadow: inset 5px 0px #eee;
+}
+pre {
+  padding: 0.5em;
+  background: #eee;
 }

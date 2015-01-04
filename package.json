@@ -18,7 +18,6 @@
     "stylus": "^0.49.3"
   },
   "dependencies": {
-    "highlight.js": "^8.4.0",
     "normalize.css": "^3.0.2"
   },
   "repository": {
