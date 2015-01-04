@@ -3,13 +3,45 @@
 @require "card.styl";
 
 .panel {
-  margin-bottom: 0.25em;
   @extend .depth-1;
+  margin-bottom: 0.5em;
+  &:last-child {
+    margin-bottom: 0;
+  }
   header, main {
     padding: 0.5em;
   }
   header {
     border-bottom: 1px solid #eee;
     background: #f7f7f7;
+    color: #000;
   }
 }
+
+[class*='panel-'] {
+  header {
+    color: #fff;
+  }
+}
+
+
+.panel.panel-white header { background: $white; color: #000; }
+.panel.panel-red header { background: $red; }
+.panel.panel-pink header { background: $pink; }
+.panel.panel-purple header { background: $purple; }
+.panel.panel-deep-purple header { background: $deep-purple; }
+.panel.panel-indigo header { background: $indigo; }
+.panel.panel-blue header { background: $blue; }
+.panel.panel-light-blue header { background: $light-blue; }
+.panel.panel-cyan header { background: $cyan; }
+.panel.panel-teal header { background: $teal; }
+.panel.panel-green header { background: $green; }
+.panel.panel-light-green header { background: $light-green; }
+.panel.panel-lime header { background: $lime; }
+.panel.panel-yellow header { background: $yellow; }
+.panel.panel-amber header { background: $amber; }
+.panel.panel-orange header { background: $orange; }
+.panel.panel-deep-orange header { background: $deep-orange; }
+.panel.panel-brown header { background: $brown; }
+.panel.panel-grey header { background: $grey; }
+.panel.panel-blue-grey header { background: $blue-grey; }

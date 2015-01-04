@@ -931,11 +931,15 @@ button.blue-grey {
 textarea,
 input {
   border: 0;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
   padding: 0.5em;
   border-radius: 2px;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+textarea:last-child,
+input:last-child {
+  margin-bottom: 0;
 }
 html input[disabled],
 html textarea[disabled] {
@@ -955,9 +959,12 @@ input:focus {
 }
 .pager {
   list-style: none;
-  margin-bottom: 0.25em;
+  margin-top: 0.5em;
   padding: 0;
   display: inline-block;
+}
+.pager:first-child {
+  margin-top: 0;
 }
 .pager:after {
   content: '';
@@ -987,8 +994,11 @@ input:focus {
 }
 .alert {
   padding: 0.5em;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
   border-radius: 2px;
+}
+.alert:last-child {
+  margin-bottom: 0;
 }
 @media screen and (min-width: 568px) {
   .alert {
@@ -1013,7 +1023,10 @@ input:focus {
 }
 table {
   border: 1px solid #eee;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
+}
+table:last-child {
+  margin-bottom: 0;
 }
 thead {
   background: #eee;
@@ -1047,7 +1060,10 @@ hr {
   margin: 2em 0;
 }
 .panel {
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
+}
+.panel:last-child {
+  margin-bottom: 0;
 }
 .panel header,
 .panel main {
@@ -1056,6 +1072,71 @@ hr {
 .panel header {
   border-bottom: 1px solid #eee;
   background: #f7f7f7;
+  color: #000;
+}
+[class*='panel-'] header {
+  color: #fff;
+}
+.panel.panel-white header {
+  background: #fff;
+  color: #000;
+}
+.panel.panel-red header {
+  background: #f44336;
+}
+.panel.panel-pink header {
+  background: #e91e63;
+}
+.panel.panel-purple header {
+  background: #9c27b0;
+}
+.panel.panel-deep-purple header {
+  background: #673ab7;
+}
+.panel.panel-indigo header {
+  background: #3f51b5;
+}
+.panel.panel-blue header {
+  background: #2196f3;
+}
+.panel.panel-light-blue header {
+  background: #03a9f4;
+}
+.panel.panel-cyan header {
+  background: #00bcd4;
+}
+.panel.panel-teal header {
+  background: #009688;
+}
+.panel.panel-green header {
+  background: #4caf50;
+}
+.panel.panel-light-green header {
+  background: #8bc34a;
+}
+.panel.panel-lime header {
+  background: #cddc39;
+}
+.panel.panel-yellow header {
+  background: #ffeb3b;
+}
+.panel.panel-amber header {
+  background: #ffc107;
+}
+.panel.panel-orange header {
+  background: #ff9800;
+}
+.panel.panel-deep-orange header {
+  background: #ff5722;
+}
+.panel.panel-brown header {
+  background: #795548;
+}
+.panel.panel-grey header {
+  background: #9e9e9e;
+}
+.panel.panel-blue-grey header {
+  background: #607d8b;
 }
 h1,
 h2,
@@ -1068,6 +1149,17 @@ blockquote,
 pre {
   margin: 0.5em 0.25em 0.5em;
   padding: 0;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+blockquote:last-child,
+pre:last-child {
+  margin-bottom: 0;
 }
 blockquote {
   padding: 0.5em 0.5em 0.5em 1em;
