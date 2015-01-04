@@ -1,9 +1,16 @@
 @require "util.styl";
 
 .card {
-  padding: 0.5em;
-  margin: 0.5em;
+  padding: 0.25em;
+  margin: 0.25em;
   background: #fff;
   @extend .depth-1;
   @extend .round-2;
+}
+
+@media screen and (min-width: 568px) {
+  .card {
+    padding: 0.5em;
+    margin: 0.5em;
+  }
 }
