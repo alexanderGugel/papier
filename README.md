@@ -114,6 +114,7 @@ If you prefer a more semantic approach, the utility classes are still useful, si
 
 * npm: `npm i papier --save`
 * bower: `bower i papier --save`
+* CDN (preferred): `<link rel="stylesheet" href="https://cdn.rawgit.com/alexanderGugel/papier/master/dist/papier-1.0.0.min.css">` or `<link rel="stylesheet" href="https://cdn.rawgit.com/alexanderGugel/papier/master/dist/papier.min.css">` for the latest version
 
 ```html
 <!DOCTYPE html>
