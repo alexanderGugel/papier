@@ -447,7 +447,8 @@ button,
 textarea:focus,
 input:focus,
 .pager,
-.panel {
+.panel,
+.tabs {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .depth-2 {
@@ -1096,6 +1097,43 @@ hr {
 @media screen and (min-width: 568px) {
   button {
     margin-bottom: 0.5em;
+  }
+}
+.tabs {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding: 0;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  text-transform: uppercase;
+}
+.tabs.tabs-justified li {
+  text-align: center;
+  display: table-cell;
+  width: 1%;
+}
+.tabs li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.5em;
+  margin: 0;
+  opacity: 0.5;
+  transition: all 100ms;
+  border-bottom: 2px solid rgba(0,0,0,0);
+}
+.tabs li.active,
+.tabs li:hover {
+  opacity: 1;
+  border-bottom: 2px solid #fff;
+}
+.tabs li a {
+  display: block;
+  text-decoration: none;
+}
+@media screen and (min-width: 568px) {
+  .tabs li {
+    padding: 1em;
   }
 }
 h1,
