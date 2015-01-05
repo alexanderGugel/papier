@@ -1,7 +1,7 @@
 {
   "name": "papier",
-  "version": "1.0.0",
-  "description": "Just another CSS framework",
+  "version": "1.0.1",
+  "description": "Just another CSS library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "stylus --include-css --watch src/papier.styl --out dist",
