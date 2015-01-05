@@ -861,14 +861,12 @@ button {
   outline: 0;
   margin-bottom: 0.25em;
   transition: all 100ms;
-  opacity: 0.9;
 }
 button:last-child {
   margin-bottom: 0;
 }
 button:hover {
   transform: translateY(-2px);
-  opacity: 1;
 }
 button,
 button.bg-white {
@@ -908,7 +906,7 @@ button .icon {
 textarea,
 input {
   border: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
   padding: 0.5em;
   border-radius: 2px;
   border: 1px solid #ccc;
@@ -970,8 +968,8 @@ input:focus {
   background: #eee;
 }
 .alert {
-  padding: 0.5em;
-  margin-bottom: 0.5em;
+  padding: 0.25em;
+  margin-bottom: 0.25em;
   border-radius: 2px;
 }
 .alert:last-child {
@@ -980,30 +978,36 @@ input:focus {
 @media screen and (min-width: 568px) {
   .alert {
     padding: 1em;
+    margin-bottom: 0.5em;
   }
 }
-.alert.alert-success {
+.alert-success {
   background: #dbefdc;
   color: #265828;
 }
-.alert.alert-info {
+.alert-info {
   background: #d3eafd;
   color: #074c83;
 }
-.alert.alert-warning {
+.alert-warning {
   background: #ffeacc;
   color: #804c00;
 }
-.alert.alert-danger {
+.alert-danger {
   background: #fdd9d7;
   color: #8d1108;
 }
 table {
   border: 1px solid #eee;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 table:last-child {
   margin-bottom: 0;
+}
+@media screen and (min-width: 568px) {
+  table {
+    margin-bottom: 0.5em;
+  }
 }
 thead {
   background: #eee;
@@ -1037,7 +1041,7 @@ hr {
   margin: 2em 0;
 }
 .panel {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 .panel:last-child {
   margin-bottom: 0;
@@ -1054,6 +1058,11 @@ hr {
   .panel header,
   .panel main {
     padding: 0.75em;
+  }
+}
+@media screen and (min-width: 568px) {
+  button {
+    margin-bottom: 0.5em;
   }
 }
 h1,

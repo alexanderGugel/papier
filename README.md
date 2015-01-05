@@ -125,6 +125,12 @@ If you prefer a more semantic approach, the utility classes are still useful, si
 <meta charset="utf-8">
 <title>Papier CSS</title>
 
+<!-- FONT -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600">
+
+<!-- ICONS -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css">
+
 <!-- MAGIC -->
 <link rel="stylesheet" href="{{PATH TO PAPIER}}/dist/papier.min.css">
 
@@ -170,3 +176,9 @@ You can also customize colors and other variables by overriding `config.styl`. E
 ## Help, Bugs, Issues
 
 File an issue if you find a bug. Feel free to send PRs!
+
+
+### Credits
+
+* intrusiveness inspired by [Picninc CSS](http://picnicss.com/)
+* grid inspired by [Pure CSS](http://purecss.io/)
