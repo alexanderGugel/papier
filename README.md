@@ -2,6 +2,8 @@
 
 # Papier -> [Demo](http://gugel.io/papier/)
 
+> a minimal, pretty semantic, responsive CSS library
+
 ## Design Decisions
 
 * **Responsiveness** Everything is responsive: alerts, panels, grid - everything!
