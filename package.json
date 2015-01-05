@@ -1,11 +1,11 @@
 {
   "name": "papier",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Just another CSS library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "stylus --include-css --watch src/papier.styl --out dist",
-    "build": "stylus --include-css src/papier.styl --out dist && cleancss dist/papier.css -o dist/papier.min.css",
+    "build": "stylus --include-css src/papier.styl --out dist && myth dist/papier.css dist/papier.css && cleancss dist/papier.css -o dist/papier.min.css",
     "serve": "st --no-cache",
     "dev": "npm run serve & npm run watch"
   },

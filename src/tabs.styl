@@ -1,0 +1,44 @@
+@require "util.styl";
+
+.tabs {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding: 0;
+  @extend .depth-1;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  text-transform: uppercase;
+  &.tabs-justified {
+    li {
+      text-align: center;
+      display: table-cell;
+      width: 1%;
+    }
+  }
+  li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0;
+    opacity: 0.5;
+    transition: all 100ms;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    &.active, &:hover {
+      opacity: 1;
+      border-bottom: 2px solid #fff;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .tabs {
+    li {
+      padding: 1em;
+    }
+  }
+}
