@@ -9,13 +9,13 @@
 * **Responsiveness** Everything is responsive: alerts, panels, grids - everything!
 * **Lightweight**: ~ 2.5kb minified and gzipped last time I checked
 * **Intrusiveness**: While other frameworks force you to be very explicit about the intended styling of your elements by adding lots of classes (`<button class="btn">Click</button>`), Papier is very semantic and simply styles e.g. all buttons as Papier-buttons (no need to add additional classes, `<button>Click</button>` works just fine). This is especially handy for rapid prototyping.
+* [**normalize.css**](http://necolas.github.io/normalize.css/) makes browsers render all elements more consistently and in line with modern standards. It's the foundation of papier.
 * **Readability over semantic**: Papier sacrifices readability and expressiveness over semantic. In Bootstrap you would create a blue button by adding the `btn-primary` and `btn` classes. Papier takes a different approach: Instead of expecting you to know that every primary button is blue, it allows you to simply add a background to it, by adding the `bg-blue` class. While this is obviously less semantic, it is much easier to understand, since who knows that `btn-primary` means "make this button blue".
 * **Prototyping**: Papier is perfect for rapid prototyping. This is also an area where it sacrifices readability over everything else. This means you have access to a ton of utility classes that aren't necessarily very semantic, but very handy and expressive - in short, perfect for hackathons.
 * Smart defaults: When setting the background of an element via `.bg-red`, the color of links and text within it will automatically set to `#fff`.
 * **No custom styles for checkboxes, radio-buttons etc.** - Users have a certain expectation how a radio button or checkbox needs to look like. Applying custom styles would ruin the assumption. Further, it's nearly impossible to make them look good on all browsers.
 * Maximum possible browser support: Everything above **IE7** should work fine - nice CSS3 animations excluded.
 * CSS preprocessor: Stylus - CSS still looks like CSS, but should also be mostly valid in SCSS and Less
-
 
 ## Utility classes
 
