@@ -4,7 +4,7 @@
 
 .panel {
   @extend .depth-1;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
   &:last-child {
     margin-bottom: 0;
   }
@@ -22,5 +22,11 @@
     header, main {
       padding: 0.75em;
     }
+  }
+}
+
+@media screen and (min-width: 568px) {
+  button {
+    margin-bottom: 0.5em;
   }
 }

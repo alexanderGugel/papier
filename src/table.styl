@@ -2,11 +2,18 @@
 
 table {
   border: 1px solid #eee;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
   &:last-child {
     margin-bottom: 0;
   }
 }
+
+@media screen and (min-width: 568px) {
+  table {
+    margin-bottom: 0.5em;
+  }
+}
+
 
 thead {
   background: #eee;

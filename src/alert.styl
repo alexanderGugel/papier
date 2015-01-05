@@ -1,8 +1,8 @@
 @require "config.styl";
 
 .alert {
-  padding: 0.5em;
-  margin-bottom: 0.5em;
+  padding: 0.25em;
+  margin-bottom: 0.25em;
   &:last-child {
     margin-bottom: 0;
   }
@@ -12,25 +12,26 @@
 @media screen and (min-width: 568px) {
   .alert {
     padding: 1em;
+    margin-bottom: 0.5em;
   }
 }
 
-.alert.alert-success {
+.alert-success {
   background: lighten($green, 80%);
   color: darken($green, 50%);
 }
 
-.alert.alert-info {
+.alert-info {
   background: lighten($blue, 80%);
   color: darken($blue, 50%);
 }
 
-.alert.alert-warning {
+.alert-warning {
   background: lighten($orange, 80%);
   color: darken($orange, 50%);
 }
 
-.alert.alert-danger {
+.alert-danger {
   background: lighten($red, 80%);
   color: darken($red, 50%);
 }
