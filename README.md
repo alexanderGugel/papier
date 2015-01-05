@@ -125,6 +125,12 @@ If you prefer a more semantic approach, the utility classes are still useful, si
 <meta charset="utf-8">
 <title>Papier CSS</title>
 
+<!-- FONT -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600">
+
+<!-- ICONS -->
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css">
+
 <!-- MAGIC -->
 <link rel="stylesheet" href="{{PATH TO PAPIER}}/dist/papier.min.css">
 
