@@ -176,3 +176,9 @@ You can also customize colors and other variables by overriding `config.styl`. E
 ## Help, Bugs, Issues
 
 File an issue if you find a bug. Feel free to send PRs!
+
+
+### Credits
+
+* intrusiveness inspired by [Picninc CSS](http://picnicss.com/)
+* grid inspired by [Pure CSS](http://purecss.io/)
