@@ -66,6 +66,7 @@
 .subtle
 .full-width
 .uppercase
+.inline-block
 .hidden
 ```
 
@@ -93,6 +94,8 @@
 .bg-brown
 .bg-grey
 .bg-blue-grey
+.bg-black
+.bg-almost-black
 ```
 
 When applying a background color (e.g. `.bg-brown`) to an element, the color of links and other text within it will automatically be set to `#fff` to maintain the contrast.

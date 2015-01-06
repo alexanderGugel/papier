@@ -597,6 +597,10 @@ pre {
   text-align: right;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .hidden {
   display: none;
 }
@@ -729,6 +733,18 @@ pre {
 .bg-blue-grey,
 .bg-blue-grey a {
   background: #607d8b;
+  color: #fff;
+}
+
+.bg-black,
+.bg-black a {
+  background: #000;
+  color: #fff;
+}
+
+.bg-almost-black,
+.bg-almost-black a {
+  background: #333;
   color: #fff;
 }
 
@@ -1292,7 +1308,7 @@ hr {
 }
 
 @media screen and (min-width: 568px) {
-  button {
+  .panel {
     margin-bottom: 0.5em;
   }
 }
@@ -1352,18 +1368,6 @@ blockquote,
 pre {
   margin: 0.5em 0.25em 0.5em;
   padding: 0;
-}
-
-h1:last-child,
-h2:last-child,
-h3:last-child,
-h4:last-child,
-h5:last-child,
-h6:last-child,
-p:last-child,
-blockquote:last-child,
-pre:last-child {
-  margin-bottom: 0;
 }
 
 blockquote {
