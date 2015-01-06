@@ -597,6 +597,10 @@ pre {
   text-align: right;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .hidden {
   display: none;
 }
@@ -729,6 +733,18 @@ pre {
 .bg-blue-grey,
 .bg-blue-grey a {
   background: #607d8b;
+  color: #fff;
+}
+
+.bg-black,
+.bg-black a {
+  background: #000;
+  color: #fff;
+}
+
+.bg-almost-black,
+.bg-almost-black a {
+  background: #333;
   color: #fff;
 }
 
