@@ -68,6 +68,22 @@
 .uppercase
 .inline-block
 .hidden
+.window-height
+```
+
+### Vertically centering elements
+For some reason ~~2014~~ 2015 and vertically centering elements is still a pain.
+```css
+.vertical-center-container
+.vertical-center
+```
+
+```html
+<div class="full-height vertical-center-container">
+    <div class="vertical-center">
+        BOOM
+    </div>
+</div>
 ```
 
 ### Background colors

@@ -3,12 +3,12 @@
 .pager {
   list-style: none;
   margin-top: 0.5em;
-  &:first-child {
-    margin-top: 0;
-  }
   padding: 0;
   display: inline-block;
   @extend .depth-1;
+  &:first-child {
+    margin-top: 0;
+  }
   &:after {
     content: '';
     display: table;
@@ -34,5 +34,16 @@
     &:hover {
       background: #eee;
     }
+  }
+}
+
+&:last-child {
+  margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 568px) {
+  .pager {
+    margin-top: 1em;
   }
 }
