@@ -2,13 +2,15 @@
 
 .tabs {
   list-style: none;
-  margin: 0;
-  margin-bottom: 0.5em;
+  margin: 0.25em 0;
   padding: 0;
   @extend .depth-1;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   text-transform: uppercase;
+  &:last-child {
+    margin-bottom: 0;
+  }
   &.tabs-justified {
     li {
       text-align: center;
@@ -37,6 +39,7 @@
 
 @media screen and (min-width: 568px) {
   .tabs {
+    margin: 0.5em 0;
     li {
       padding: 1em;
     }
