@@ -199,5 +199,5 @@ The easiest way to support this project is to **star** it. Thanks.
 
 ### Credits
 
-* intrusiveness inspired by [Picninc CSS](http://picnicss.com/)
+* intrusiveness inspired by [Picnic CSS](http://picnicss.com/)
 * grid inspired by [Pure CSS](http://purecss.io/) and [Bootstrap](http://getbootstrap.com/)
